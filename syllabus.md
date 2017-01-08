@@ -67,7 +67,7 @@ These are concepts you should feel comfortable with already. You may want to rev
 - graphs of linear and quadratic functions
 - graphing a function by computing numerous values
 - trigonometric functions, their graphs and basic properties
-- trigonometric function values at $0, $\pm\frac{\pi}{2}$, $\pm\frac{\pi}{3}$, $\pm\frac{\pi}{6}$
+- trigonometric function values at $0$, $\pm\frac{\pi}{2}$, $\pm\frac{\pi}{3}$, $\pm\frac{\pi}{6}$
 - relations between the trigonometric functions (e.g. $\sin^2(x) + \cos^2(x) = 1$)
 - area computation formulas for rectangles, triangles, circles
 
