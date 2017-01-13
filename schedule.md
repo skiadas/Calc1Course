@@ -11,7 +11,9 @@ Day 2
   ~ [Review of Precalculus (cont)](notes/algebra_review.md)
 
 Day 3
-  ~ The concept of limit
+  ~ [Review of Precalculus (inequalities)](notes/algebra_review.md)
+
+    [The concept of limit](notes/limit_concept.md)
 
 ## Week  2 (01/16-01/20)
 
