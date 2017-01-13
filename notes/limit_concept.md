@@ -14,7 +14,7 @@
 
 ### Average and instantaneous rates of change
 
-- Imagine someone's position on the $x$ axis as as function of time $t$ is given by $x=2t^2$.
+- Imagine someone's position on the $x$ axis as a function of time $t$ is given by $x=2t^2$.
 - We can find their average *velocity* between two times by taking the ratio of the difference in the $x$ positions over the difference in times.
 - If we want to find out how fast the person is going at one specific time, their *instantaneous velocity*, that's harder.
 - Think of the value you see in the speedometer of a car. How is it computed?
@@ -26,7 +26,7 @@
 - What is the line that best describes the curve, near $a$?
 - Idea: Start with the secant lines: Lines joining the point $a$ and a nearby point.
 - Look at the slopes of the secant lines as the nearby point gets closer and closer to $a$.
-- Practice: Try this out for $f(x) = $\sqrt{x}$ near $x=1$.
+- Practice: Try this out for $f(x) = \sqrt{x}$ near $x=1$.
 
 ### Limits
 
@@ -34,7 +34,8 @@
 - Example: $\frac{\sin x}{x}$ when $x$ is near $0$.
 - Numerically: Try numbers $x$ closer and closer to $0$. See that the resulting values get closer and closer to 1.
 - Definition of limit:
-    > We say that *the limit of $f(x)$ as $x$ approaches $a$ is $L$, and we write:
+
+    > We say that the **limit** of $f(x)$ as $x$ approaches $a$ is $L$, and we write:
     > $$\lim_{x\to a}f(x) = L$$
     > if the difference $|f(x)-L|$ becomes arbitrarily small when $x$ is sufficiently close (but not equal) to $a$.
     >
