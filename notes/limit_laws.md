@@ -36,6 +36,6 @@ A number of laws govern the computation of limits. These laws allow us to comput
 For example, let's compute $\displaystyle\lim_{x\to 1} \sqrt{x^3 + 2x}$:
 
 - $\displaystyle\lim_{x\to 1} \sqrt{x^3 + 2x} = \sqrt{\lim_{x\to 1} x^3 + 2x} = \sqrt{\lim_{x\to 1} x^3 + \lim_{x\to 1} 2x}$
-- We now compute each part: $\displaystyle \lim_{x\to 1} x^3 = \left(\lim_{x\to 1}\right)^3 = 1^3 = 1$
+- We now compute each part: $\displaystyle \lim_{x\to 1} x^3 = \left(\lim_{x\to 1} x\right)^3 = 1^3 = 1$
 - And: $\displaystyle\lim_{x\to 1} 2x = 2\lim_{x\to 1} x = 2\times 1 = 2$
 - Putting it all together we get: $\sqrt{1 + 2} = \sqrt{3}$
