@@ -47,8 +47,22 @@
 <li>Therefore by the squeeze theorem we also get that <span class="math inline">\(\displaystyle\lim_{x\to 0}f(x) =\lim_{x\to 0}x\sin\frac{1}{x} = 0\)</span>.</li>
 </ul></li>
 </ul>
+<h3 id="continuity-of-trigonometric-functions">Continuity of Trigonometric Functions</h3>
+<p>The squeeze theorem allows us to prove two important trigonometric limits. We first discuss how it can help us show that the trig functions are continuous. We first show that sine and cosine are continuous at <span class="math inline">\(0\)</span>:</p>
+<blockquote>
+<p><span class="math display">\[\lim_{t\to 0}\sin t = 0,\quad \lim_{t\to 0}\cos t = 1\]</span></p>
+</blockquote>
+<p>This follows from the following: Consider the unit circle, and a sector of angle <span class="math inline">\(t\)</span> radians on it, starting from the <span class="math inline">\(x\)</span> axis. Denote the point on the circle <span class="math inline">\(A\)</span>, and the point on the <span class="math inline">\(x\)</span> axis where the circle starts as <span class="math inline">\(B\)</span>.</p>
+<p>Then the chord from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> has length <span class="math inline">\(\sqrt{(1-\cos t)^2 + \sin^2 t}\)</span>, while the part of the circle from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> has length <span class="math inline">\(|t|\)</span>. And the length of the chord is obviously less, so we have the inequality: <span class="math display">\[\sqrt{(1-\cos t)^2 + \sin^2 t}\leq |t|\]</span> Because the two sides of a right-angle triangle have length less than the hypotenuse, we also have the inequalities: <span class="math display">\[0\leq |1-\cos t|\leq\sqrt{(1-\cos t)^2 + \sin^2 t}\leq |t|\]</span> <span class="math display">\[0\leq |\sin t|\leq\sqrt{(1-\cos t)^2 + \sin^2 t}\leq |t|\]</span> The squeeze theorem now gives us the desired results, along with the following important observation:</p>
+<blockquote>
+<p><span class="math inline">\(\lim_{x\to a}f(x) = 0\)</span> if and only if <span class="math inline">\(\lim_{x\to a}|f(x)| = 0\)</span>.</p>
+</blockquote>
+<p>We now show in general that the sine and cosine functions are continuous, namely:</p>
+<blockquote>
+<p><span class="math display">\[\lim_{x\to a}\sin x = \sin a,\quad \lim_{x\to a}\cos x = \cos a\]</span></p>
+</blockquote>
+<p>We only show the case of sine here; the case of cosine is similar. The key is to rewrite the limit, using <span class="math inline">\(t = x-a\)</span>, or <span class="math inline">\(x=a+t\)</span>: <span class="math display">\[\lim_{x\to a}\sin x = \lim_{t\to 0} \sin(a+t)\]</span> We then use the trigonometric identity: <span class="math display">\[\lim_{t\to 0} \sin(a+t) = \lim_{t\to 0} \sin a \cos t + \cos a \sin t = \sin a \lim_{t\to 0}\cos t + \cos a\lim_{t\to 0} \sin t = \sin a\cdot 1 + \cos a \cdot 0 = \sin a\]</span></p>
 <h3 id="trigonometric-limits-1">Trigonometric Limits</h3>
-<p>The squeeze theorem allows us to prove two important trigonometric limits:</p>
 <blockquote>
 <p><strong>Important Trigonometric Limits</strong> <span class="math display">\[\lim_{x\to 0}\frac{\sin x}{x} = 1\]</span> <span class="math display">\[\lim_{x\to 0}\frac{1 - \cos x}{x} = 0\]</span></p>
 </blockquote>
