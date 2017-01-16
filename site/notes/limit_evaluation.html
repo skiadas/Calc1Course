@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="evaluating-limits">Evaluating Limits</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 2.5</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 2.5: 5, 7, 11, 13, 21, 24, 25</li>
+<li>To turn in (together with 2.6): 2.5 16, 30</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="algebraic-evaluation-of-limits">Algebraic Evaluation of Limits</h3>
+<ul>
+<li>Many limits cannot be evaluated by substitution.</li>
+<li>Most typical case is a “0 over 0”.</li>
+<li>Example: <span class="math inline">\(\displaystyle \lim_{x\to 2}\frac{x^2-4}{x-2}\)</span></li>
+<li>Solution: Perform algebraic manipulation to the function, without changing the value but eliminating the problematic part.</li>
+<li>In this example: <span class="math inline">\(\frac{x^2-4}{x-2} = \frac{(x-2)(x+2)}{x-2} = x+2\)</span></li>
+<li>We were able to eliminate the term <span class="math inline">\(x-2\)</span>, which was the one causing the zeros. &gt; When dealing with limits that cannot be evaluated directly: &gt; &gt; - Perform algebraic transformations until the problematic terms go away. &gt; - Evaluate limit of resulting expression by substitution/plugging in.</li>
+<li>Other examples:
+<ul>
+<li><span class="math inline">\(\displaystyle\lim_{x\to 4}\frac{\sqrt{x} - 2}{x-4}\)</span>. Use “conjugate”.</li>
+<li><span class="math inline">\(\displaystyle\lim_{x\to 1}\left(\frac{1}{x-1} - \frac{2}{x^2-1}\right)\)</span> (<span class="math inline">\(\infty - \infty\)</span> form). Make common denominators.</li>
+<li><span class="math inline">\(\displaystyle\lim_{x\to \frac{\pi}{2}}\frac{\tan x}{\sec x}\)</span>. Write in terms of <span class="math inline">\(\sin\)</span>, <span class="math inline">\(\cos\)</span>.</li>
+</ul></li>
+</ul>
+</body>
+</html>

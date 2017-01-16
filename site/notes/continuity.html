@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="continuity">Continuity</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 2.4</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 2.4 3, 9, 11, 13, 18, 23, 37, 51, 60, 67, 69</li>
+<li>In class: 2.4 49, 57</li>
+<li>To turn in (due Monday, together with 2.3): 2.4 4, 12, 52</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="continuity-1">Continuity</h3>
+<ul>
+<li>Continuity is meant to describe the concept that we can draw the graph of a function without lifting our pen: The function forms a continuous whole.</li>
+<li>The idea is to relate the limit of a function at a point <span class="math inline">\(a\)</span> to the value of the function at <span class="math inline">\(a\)</span>. The limit tells us what happens <em>near</em> the point <span class="math inline">\(a\)</span>. For continuity, this must agree with what happens exactly at <span class="math inline">\(a\)</span>.</li>
+<li>Definition: &gt; We say that a function <span class="math inline">\(f(x)\)</span> is <strong>continuous</strong> at a point <span class="math inline">\(x=c\)</span> if: &gt; &gt; - The limit <span class="math inline">\(\displaystyle\lim_{x\to a}f(x)\)</span> exists. &gt; - The value <span class="math inline">\(f(a)\)</span> exists. &gt; - They agree: <span class="math inline">\(\displaystyle\lim_{x\to a}f(x) = f(a)\)</span>.</li>
+<li>Practical implication: Can compute a limit by “plugging in”.</li>
+<li>If this is not the case, we say that the function is <strong>discontinuous</strong> at <span class="math inline">\(x=c\)</span>.</li>
+<li>We say that <span class="math inline">\(f\)</span> is <strong>continuous on an interval</strong> <span class="math inline">\([a,b]\)</span>, if it is continuous at every point of the interval.</li>
+<li>Examples of continuous functions:
+<ul>
+<li>Constant function</li>
+<li><span class="math inline">\(x^n\)</span></li>
+<li>Sum of continuous functions is continuous</li>
+<li>Product of continuous functions is continuous</li>
+<li>Quotient of continuous function is continuous, except where the denominator is <span class="math inline">\(0\)</span></li>
+<li>Trigonometric functions are continuous</li>
+</ul></li>
+<li>Possible discontinuities:
+<ul>
+<li>Left-sided limit and right-sided limit exist but differ (<strong>jump discontinuity</strong>)</li>
+<li>Limit exists, but value is different from it (<strong>removable discontinuity</strong>)</li>
+<li>One-sided limits are infinity (<strong>infinite discontinuity</strong>) or don’t exist</li>
+</ul></li>
+<li>Example of studying the continuity of a piecewise-defined function (example 2)</li>
+<li><strong>Function composition</strong>: If <span class="math inline">\(g(x)\)</span> is continuous at <span class="math inline">\(x=c\)</span>, and <span class="math inline">\(f(u)\)</span> is continuous at <span class="math inline">\(u=g(c)\)</span>, then <span class="math inline">\(f(g(x))\)</span> is also continuous at <span class="math inline">\(x=c\)</span>.
+<ul>
+<li>Example: <span class="math inline">\(\sin(x^2)\)</span> is continuous.</li>
+</ul></li>
+</ul>
+</body>
+</html>

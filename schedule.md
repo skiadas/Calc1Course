@@ -18,13 +18,17 @@ Day 3
 ## Week  2 (01/16-01/20)
 
 Day 1
-  ~ Limit laws
+  ~ [The concept of limit](notes/limit_concept.md)
+
+    [Limit laws](notes/limit_laws.md)
 
 Day 2
-  ~ Continuity
+  ~ [Continuity](notes/continuity.md)
 
 Day 3
-  ~ Evaluating Limits, Trig Limits
+  ~ [Evaluating Limits](notes/limit_evaluation.md)
+
+    [Trigonometric Limits](notes/limit_trig.md)
 
 ## Week  3 (01/23-01/27)
 

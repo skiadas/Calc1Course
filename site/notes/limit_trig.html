@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="trigonometric-limits">Trigonometric Limits</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 2.6</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 2.6: 5, 7, 14, 17, 19, 21, 33, 37, 43</li>
+<li>To turn in (together with 2.5): 2.6 10, 24, 40</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="the-squeeze-theorem">The Squeeze Theorem</h3>
+<ul>
+<li>The squeeze theorem allows us to deal with functions that have some parts that are hard to deal with, but end up not to not matter in the long run.</li>
+<li>Example: <span class="math inline">\(\displaystyle \lim_{x\to 0} x \sin\frac{1}{x}\)</span>
+<ul>
+<li><span class="math inline">\(\sin\frac{1}{x}\)</span> behaves erratically. But it stays within <span class="math inline">\(\pm 1\)</span>.</li>
+<li><span class="math inline">\(x\)</span> goes to <span class="math inline">\(0\)</span>.</li>
+<li>Their product would also go to <span class="math inline">\(0\)</span>, because it never exceeds <span class="math inline">\(\pm x\)</span>.</li>
+</ul></li>
+</ul>
+<blockquote>
+<p><strong>Squeeze Theorem</strong>:</p>
+<p>Assume that for all <span class="math inline">\(x\neq c\)</span> in some interval containing <span class="math inline">\(c\)</span> we have: <span class="math display">\[\ell(x) \leq f(x) \leq u(x)\]</span> and also that we have that the limits of <span class="math inline">\(\ell\)</span> and <span class="math inline">\(u\)</span> agree: <span class="math display">\[\lim_{x\to c}\ell(x) = \lim_{x\to c}u(x) = L\]</span> Then we have that the limit of <span class="math inline">\(f(x)\)</span> also exists and: <span class="math display">\[\lim_{x\to c}f(x) = L\]</span></p>
+</blockquote>
+<ul>
+<li>Example of using the squeeze theorem:
+<ul>
+<li><span class="math inline">\(f(x) = x\sin\frac{1}{x}\)</span>, <span class="math inline">\(\ell(x) = -x\)</span>, <span class="math inline">\(u(x) = x\)</span></li>
+<li>Then <span class="math inline">\(\ell(x) \leq f(x) \leq u(x)\)</span></li>
+<li>And <span class="math inline">\(\displaystyle\lim_{x\to 0}\ell(x) = \lim_{x\to 0}-x = 0\)</span>, <span class="math inline">\(\displaystyle\lim_{x\to 0}u(x) = \lim_{x\to 0}x = 0\)</span></li>
+<li>Therefore by the squeeze theorem we also get that <span class="math inline">\(\displaystyle\lim_{x\to 0}f(x) =\lim_{x\to 0}x\sin\frac{1}{x} = 0\)</span>.</li>
+</ul></li>
+</ul>
+<h3 id="trigonometric-limits-1">Trigonometric Limits</h3>
+<p>The squeeze theorem allows us to prove two important trigonometric limits:</p>
+<blockquote>
+<p><strong>Important Trigonometric Limits</strong> <span class="math display">\[\lim_{x\to 0}\frac{\sin x}{x} = 1\]</span> <span class="math display">\[\lim_{x\to 0}\frac{1 - \cos x}{x} = 0\]</span></p>
+</blockquote>
+<p>The first of these limits follows from the following theorem:</p>
+<blockquote>
+<p><strong>Theorem</strong> For all <span class="math inline">\(x\neq 0\)</span> with <span class="math inline">\(-\frac{\pi}{2} &lt; x &lt; \frac{\pi}{2}\)</span>, we have: <span class="math display">\[\cos x \leq \frac{\sin x}{x}\leq 1\]</span></p>
+</blockquote>
+<ul>
+<li>Proof of the theorem: Consider the unit circle, and compare the area of a sector and two triangles surrounding it.</li>
+<li>The first limit follows directly from this theorem.</li>
+<li>The second limit follows from the following: <span class="math display">\[\frac{1-\cos x}{x} = \frac{1-\cos^2 x}{x(1+\cos x)} = \frac{\sin^2 x}{x(1+\cos x)} = \frac{\sin x}{1+\cos x}\cdot \frac{\sin x}{x}\]</span></li>
+</ul>
+<h3 id="other-trigonometric-limits">Other trigonometric limits</h3>
+<p>The above limits can give rise to other limits as well:</p>
+<ul>
+<li><span class="math inline">\(\displaystyle\lim_{x\to 0}\frac{\sin(3x)}{x}\)</span></li>
+<li><span class="math inline">\(\displaystyle\lim_{x\to 0}\frac{\sin(3x)}{\sin(5x)}\)</span></li>
+<li><span class="math inline">\(\displaystyle\lim_{x\to 0}\frac{\sin(3x)}{\tan(x)}\)</span></li>
+</ul>
+</body>
+</html>

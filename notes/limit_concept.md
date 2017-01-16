@@ -8,7 +8,7 @@
 
 - Section 2.1: 1, 5, 25, 31
 - Section 2.2: 1, 3, 9, 17, 21
-- To turn in: 2.1 6, 8, 2.2 2, 22
+- To turn in (Wednesday): 2.1 6, 8, 2.2 2, 22
 
 ## Notes
 
@@ -42,3 +42,10 @@
     > In other words, the values of $f(x)$ must get arbitrarily close to $L$ when $x$ is sufficiently close but not equal to $a$.
 - Simple examples: $\displaystyle\lim_{x\to a} k = k$, $\displaystyle\lim_{x\to a} x = a$
 - More complex example: $\displaystyle\lim_{x\to 1} 2x+1 = 3$.
+
+### Infinite and one-sided limits
+
+- Some times a function gets arbitrarily large/small as we approach the limit point.
+- Example: $\frac{1}{x}$ at $x=0$.
+- One-sided limits: $\displaystyle\lim_{x\to 0^+}\frac{1}{x} = +\infty$
+- $\displaystyle\lim_{x\to 0^-}\frac{1}{x} = -\infty$

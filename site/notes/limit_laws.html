@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="limit-laws">Limit Laws</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 2.3</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 2.3 3, 5, 8, 9, 11, 13, 27, 31</li>
+<li>To turn in (together with 2.4): 2.3 12, 14</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="limit-laws-1">Limit Laws</h3>
+<p>A number of laws govern the computation of limits. These laws allow us to compute a limit of a more complex function based on the limits of its (simpler) components.</p>
+<blockquote>
+<p><strong>Basic Limit Laws:</strong></p>
+<p>If <span class="math inline">\(\displaystyle\lim_{x\to c}f(x)\)</span> and <span class="math inline">\(\displaystyle\lim_{x\to c}g(x)\)</span> exist, then:</p>
+<ul>
+<li><strong>Constant and Linear Law</strong>: <span class="math inline">\(\displaystyle \lim_{x\to c}k = k\)</span>, <span class="math inline">\(\displaystyle \lim_{x\to c} x = c\)</span>.</li>
+<li><strong>Sum Law</strong>: The limit <span class="math inline">\(\displaystyle\lim_{x\to c}f(x) + g(x)\)</span> also exists and: <span class="math display">\[\displaystyle\lim_{x\to c}f(x) + g(x) = \lim_{x\to c}f(x) + \lim_{x\to c}g(x)\]</span></li>
+<li><strong>Constant Multiple Law</strong>: The limit <span class="math inline">\(\displaystyle\lim_{x\to c}k f(x)\)</span> also exists and: <span class="math display">\[\displaystyle\lim_{x\to c}k f(x) = k\lim_{x\to c}f(x)\]</span></li>
+<li><strong>Product Law</strong>: The limit <span class="math inline">\(\displaystyle\lim_{x\to c}f(x)g(x)\)</span> also exists and: <span class="math display">\[\displaystyle\lim_{x\to c}f(x)g(x) = \lim_{x\to c}f(x)\lim_{x\to c}g(x)\]</span></li>
+<li><strong>Quotient Law</strong>: If further <span class="math inline">\(\displaystyle\lim_{x\to c}g(x)\neq 0\)</span>, then the limit <span class="math inline">\(\displaystyle\lim_{x\to c}\frac{f(x)}{g(x)}\)</span> also exists and: <span class="math display">\[\displaystyle\lim_{x\to c}\frac{f(x)}{g(x)} = \frac{\displaystyle\lim_{x\to c}f(x)}{\displaystyle\lim_{x\to c}g(x)}\]</span></li>
+<li><strong>Power Law</strong>: The limit <span class="math inline">\(\displaystyle\lim_{x\to c}f(x)^n\)</span> also exists and: <span class="math display">\[\displaystyle\lim_{x\to c}f(x)^n = \left(\lim_{x\to c}f(x)\right)^n\]</span></li>
+<li><strong>Root Law</strong>: If further <span class="math inline">\(\displaystyle\lim_{x\to c}g(x)\neq 0\)</span>, then the limit <span class="math inline">\(\displaystyle\lim_{x\to c}\sqrt[n]{f(x)}\)</span> also exists and: <span class="math display">\[\displaystyle\lim_{x\to c}\sqrt[n]{f(x)} = \sqrt[n]{\lim_{x\to c}f(x)}\]</span></li>
+</ul>
+</blockquote>
+<p>For example, let’s compute <span class="math inline">\(\displaystyle\lim_{x\to 1} \sqrt{x^3 + 2x}\)</span>:</p>
+<ul>
+<li><span class="math inline">\(\displaystyle\lim_{x\to 1} \sqrt{x^3 + 2x} = \sqrt{\lim_{x\to 1} x^3 + 2x} = \sqrt{\lim_{x\to 1} x^3 + \lim_{x\to 1} 2x}\)</span></li>
+<li>We now compute each part: <span class="math inline">\(\displaystyle \lim_{x\to 1} x^3 = \left(\lim_{x\to 1}\right)^3 = 1^3 = 1\)</span></li>
+<li>And: <span class="math inline">\(\displaystyle\lim_{x\to 1} 2x = 2\lim_{x\to 1} x = 2\times 1 = 2\)</span></li>
+<li>Putting it all together we get: <span class="math inline">\(\sqrt{1 + 2} = \sqrt{3}\)</span></li>
+</ul>
+</body>
+</html>
