@@ -17,6 +17,7 @@
 - Continuity is meant to describe the concept that we can draw the graph of a function without lifting our pen: The function forms a continuous whole.
 - The idea is to relate the limit of a function at a point $a$ to the value of the function at $a$. The limit tells us what happens *near* the point $a$. For continuity, this must agree with what happens exactly at $a$.
 - Definition:
+
     > We say that a function $f(x)$ is **continuous** at a point $x=c$ if:
     >
     > - The limit $\displaystyle\lim_{x\to a}f(x)$ exists.
