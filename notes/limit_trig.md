@@ -13,7 +13,7 @@
 
 ### The Squeeze Theorem
 
-- The squeeze theorem allows us to deal with functions that have some parts that are hard to deal with, but end up not to not matter in the long run.
+- The squeeze theorem allows us to deal with functions that have some parts that are hard to deal with, but end up to not matter in the long run.
 - Example: $\displaystyle \lim_{x\to 0} x \sin\frac{1}{x}$
     - $\sin\frac{1}{x}$ behaves erratically. But it stays within $\pm 1$.
     - $x$ goes to $0$.
