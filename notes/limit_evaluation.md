@@ -19,6 +19,7 @@
 - Solution: Perform algebraic manipulation to the function, without changing the value but eliminating the problematic part.
 - In this example: $\frac{x^2-4}{x-2} = \frac{(x-2)(x+2)}{x-2} = x+2$
 - We were able to eliminate the term $x-2$, which was the one causing the zeros.
+
     > When dealing with limits that cannot be evaluated directly:
     >
     > - Perform algebraic transformations until the problematic terms go away.
