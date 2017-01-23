@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="introduction-to-derivatives">Introduction to derivatives</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 3.1</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 3.1: 3, 5, 11, 13, 15, 21, 33, 35, 37, 41</li>
+<li>To turn in (together with 3.2): 3.1 4, 34</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="definition-of-derivative">Definition of Derivative</h3>
+<ul>
+<li>The derivative is a formal description of the concept of “instantaneous rate of change” that we looked at when we discussed limits.</li>
+<li>Geometrically can be thought of as the slope of the tangent line, which is a <em>limit</em> of the slopes of the secant lines.</li>
+<li><p>Definition:</p>
+<blockquote>
+<p>The <strong>derivative</strong> of <span class="math inline">\(f(x)\)</span> at the point <span class="math inline">\(x=a\)</span> is defined as: <span class="math display">\[f&#39;(a) = \lim_{x\to a}\frac{f(x)-f(a)}{x-a}\]</span> Alternative description: <span class="math display">\[f&#39;(a) = \lim_{h\to 9}\frac{f(a+h)-f(a)}{h}\]</span></p>
+</blockquote></li>
+<li><p>Equation for tangent line:</p>
+<blockquote>
+<p><strong>Tangent Line</strong>: <span class="math display">\[y - f(a) = f&#39;(a)(x-a)\]</span></p>
+</blockquote></li>
+<li>Example 1:
+<ul>
+<li><span class="math inline">\(f(x) = x^3\)</span>, <span class="math inline">\(a=2\)</span>.</li>
+<li><span class="math inline">\(\frac{f(a+h)-f(a)}{h} = \frac{(2+h)^3-8}{h} = \frac{2^3+6h^2+12h + h^3 - 8}{h} = 6h + 12 +h^2\)</span>.</li>
+<li>Taking limit as <span class="math inline">\(h\to 0\)</span>: <span class="math inline">\(f&#39;(2) = 0 + 12 + 0 = 12\)</span></li>
+</ul></li>
+<li>Practice: Do same example using the other limit formulation.</li>
+<li>Example 2:
+<ul>
+<li><span class="math inline">\(f(x) = \frac{1}{x}\)</span>, <span class="math inline">\(a=2\)</span>.</li>
+<li><span class="math inline">\(\frac{f(x)-f(a)}{x-a} = \frac{\frac{1}{x}-\frac{1}{a}}{x-a} = \frac{\frac{a-x}{xa}}{x-a} = -\frac{1}{xa} = -\frac{1}{a^2} = -\frac{1}{4}\)</span></li>
+</ul></li>
+<li>Derivatives of linear and constant equations:
+<ul>
+<li><span class="math inline">\((mx+b)&#39; = m\)</span></li>
+<li><span class="math inline">\(b&#39; = 0\)</span></li>
+</ul></li>
+</ul>
+</body>
+</html>

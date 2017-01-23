@@ -7,7 +7,7 @@
 ## Practice problems
 
 - Section 2.6: 5, 7, 14, 17, 19, 21, 33, 37, 43
-- To turn in (together with 2.5): 2.6 10, 24, 40
+- To turn in (due Friday, together with 2.5): 2.6 10, 24, 40
 
 ## Notes
 

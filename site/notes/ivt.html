@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="intermediate-value-theorem">Intermediate Value Theorem</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 2.8</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 2.8: 1, 5, 7, 19</li>
+<li>In class: 2.8 14: <span class="math inline">\(\tan x = x\)</span> has infinitely many solutions</li>
+<li>To turn in (due Wednesday, together with 2.7): 2.8 2, 6</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="intermediate-value-theorem-1">Intermediate Value Theorem</h3>
+<blockquote>
+<p><strong>Intermediate Value Theorem</strong></p>
+<p>If <span class="math inline">\(f(x)\)</span> is a continuous function on <span class="math inline">\([a,b]\)</span> and <span class="math inline">\(L\)</span> is a number between <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span>, then there must be a <span class="math inline">\(c\in[a,b]\)</span> such that <span class="math inline">\(f(c) = L\)</span>.</p>
+<p>Simply put: A continuous function takes all values between <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span>.</p>
+<p><strong>Important special case:</strong> If <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span> have opposite signs, then the function <span class="math inline">\(f\)</span> must have a zero somewhere between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</p>
+</blockquote>
+<ul>
+<li>Make sure to have a good graphical representation of this result.</li>
+<li>The importance of the theorem is that it allows us to guaranteed the existence of solutions to equations.</li>
+<li>Example: We will show that <span class="math inline">\(\sqrt{2}\)</span> exists:
+<ul>
+<li>The square root is a number <span class="math inline">\(c\)</span> such that <span class="math inline">\(c^2 = 2\)</span>.</li>
+<li>Consider the function <span class="math inline">\(f(x) = x^2\)</span> on the interval <span class="math inline">\([1,2]\)</span>.</li>
+<li>Then <span class="math inline">\(f(1) &lt; 2 &lt; f(2)\)</span>.</li>
+<li>The IVT tells us there must be a <span class="math inline">\(c\in[1,2]\)</span> with <span class="math inline">\(f(c) = 2\)</span>.</li>
+</ul></li>
+<li>Example 2: Show that there is a positive <span class="math inline">\(x\)</span> with <span class="math inline">\(x = \sin x\)</span>.
+<ul>
+<li>Idea: Bring everything to one side: <span class="math inline">\(f(x) = x - \sin x\)</span>.</li>
+<li>Look for a zero.</li>
+</ul></li>
+<li><strong>Bisection method</strong>: Allows us to zero in on a solution:
+<ul>
+<li>In the previous example, consider <span class="math inline">\(f(1.5)\)</span>. Since it is bigger than <span class="math inline">\(2\)</span>, the <span class="math inline">\(c\)</span> is actually in <span class="math inline">\([1,1.5]\)</span>.</li>
+<li>Try <span class="math inline">\(f(1.25)\)</span> next.</li>
+<li>Keep bisecting the interval and trying the middle value.</li>
+<li>Practice: Find the first 3 decimals points of <span class="math inline">\(\sqrt{2}\)</span>.</li>
+</ul></li>
+</ul>
+</body>
+</html>

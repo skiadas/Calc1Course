@@ -28,18 +28,20 @@ Day 2
 Day 3
   ~ [Evaluating Limits](notes/limit_evaluation.md)
 
-    [Trigonometric Limits](notes/limit_trig.md)
-
 ## Week  3 (01/23-01/27)
 
 Day 1
-  ~ Limits at Infinity, Intemediate Value Theorem
+  ~ [Trigonometric Limits](notes/limit_trig.md)
+
+    [Limits at Infinity](notes/limits_infinity.md)
 
 Day 2
-  ~ Introduction to derivatives
+  ~ [Intermediate Value Theorem](notes/ivt.md)
 
 Day 3
-  ~ Derivative as a function
+  ~ [Introduction to derivatives](notes/derivatives_intro.md)
+
+    Derivative as a function
 
 ## Week  4 (01/30-02/03)
 
