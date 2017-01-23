@@ -33,7 +33,7 @@ Day 3
 Day 1
   ~ [Trigonometric Limits](notes/limit_trig.md)
 
-    [Limits at Infinity](notes/limits_infinity.md)
+    [Limits at Infinity](notes/limit_infinity.md)
 
 Day 2
   ~ [Intermediate Value Theorem](notes/ivt.md)
