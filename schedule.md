@@ -41,7 +41,7 @@ Day 3
 
     [Introduction to derivatives](notes/derivatives_intro.md)
 
-    Due: 2.5 16, 30, 2.6 10, 24, 40
+    Homework Due: 2.5 16, 30, 2.6 10, 24, 40
 
 ## Week  4 (01/30-02/03)
 
@@ -53,7 +53,7 @@ Day 1
 Day 2
   ~ Derivative rules (cont)
 
-    Due: 2.7 8, 20, 2.8 2, 6
+    Homework Due: 2.7 8, 20, 2.8 2, 6
 
 Day 3
   ~ Derivative as a rate of change, applications
