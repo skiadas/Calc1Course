@@ -33,23 +33,27 @@ Day 3
 Day 1
   ~ [Trigonometric Limits](notes/limit_trig.md)
 
-    [Limits at Infinity](notes/limit_infinity.md)
-
 Day 2
-  ~ [Intermediate Value Theorem](notes/ivt.md)
+  ~ [Limits at Infinity](notes/limit_infinity.md)
 
 Day 3
-  ~ [Introduction to derivatives](notes/derivatives_intro.md)
+  ~ [Intermediate Value Theorem](notes/ivt.md)
 
-    Derivative as a function
+    [Introduction to derivatives](notes/derivatives_intro.md)
+
+    Due: 2.5 16, 30, 2.6 10, 24, 40
 
 ## Week  4 (01/30-02/03)
 
 Day 1
-  ~ Derivative rules
+  ~ Derivative as a function
+
+    Derivative rules
 
 Day 2
   ~ Derivative rules (cont)
+
+    Due: 2.7 8, 20, 2.8 2, 6
 
 Day 3
   ~ Derivative as a rate of change, applications
