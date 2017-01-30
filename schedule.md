@@ -39,24 +39,22 @@ Day 2
 Day 3
   ~ [Intermediate Value Theorem](notes/ivt.md)
 
-    [Introduction to derivatives](notes/derivatives_intro.md)
-
     Homework Due: 2.5 16, 30, 2.6 10, 24, 40
 
 ## Week  4 (01/30-02/03)
 
 Day 1
-  ~ Derivative as a function
-
-    Derivative rules
+  ~ [Introduction to derivatives](notes/derivatives_intro.md)
 
 Day 2
-  ~ Derivative rules (cont)
+  ~ [Derivative as a function](notes/derivatives_function.md)
 
     Homework Due: 2.7 8, 20, 2.8 2, 6
 
 Day 3
-  ~ Derivative as a rate of change, applications
+  ~ [Derivative rules](notes/derivatives_rules.md)
+
+    Homework Due: 3.1 4, 26, 34, 28
 
 ## Week  5 (02/06-02/10)
 
@@ -64,10 +62,14 @@ Day 1
   ~ **MIDTERM 1** ([study guide](notes/midterm1_study_guide.md))
 
 Day 2
-  ~ Higher derivatives
+  ~ Derivative as a rate of change, applications
+
+    Higher derivatives
 
 Day 3
-  ~  Derivatives for trigonometric functions
+  ~ Derivatives for trigonometric functions
+
+    Homework Due: 3.2 16, 20, 26, 36, 66
 
 ## Week  6 (02/13-02/17)
 
