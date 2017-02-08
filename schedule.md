@@ -62,22 +62,25 @@ Day 1
   ~ **MIDTERM 1** ([study guide](notes/midterm1_study_guide.md))
 
 Day 2
+  ~ [Derivative rules](notes/derivatives_rules.md)
+
+
+Day 3
   ~ Derivative as a rate of change, applications
 
     Higher derivatives
-
-Day 3
-  ~ Derivatives for trigonometric functions
 
     Homework Due: 3.2 16, 20, 26, 36, 66
 
 ## Week  6 (02/13-02/17)
 
 Day 1
-  ~ Chain rule and Implicit differentiation
+  ~ Derivatives for trigonometric functions
 
 Day 2
-  ~ Related rates
+  ~ Chain rule and Implicit differentiation
+
+    Related rates
 
 Day 3
   ~ Linear Approximation and applications
