@@ -7,7 +7,7 @@
 ## Practice problems
 
 - Section 3.3: 3, 7, 11, 15, 17, 21, 27, 31, 37
-- To turn in (together with 3.4): 3.3 4, 18, 32
+- To turn in (together with 3.5): 3.3 4, 18, 32
 
 ## Notes
 
