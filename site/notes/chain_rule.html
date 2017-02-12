@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="chain-rule">Chain Rule</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 3.7</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 3.7: 7, 9, 13, 21, 27, 31, 69</li>
+<li>To turn in (together with 3.6): 3.7 12, 70</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="the-chain-rule">The Chain Rule</h3>
+<p>The chain rule tells us how to differentiate the composite of two functions:</p>
+<blockquote>
+<p><strong>Composite function</strong> <span class="math display">\[(f \circ g)(x) = f(g(x))\]</span></p>
+</blockquote>
+<p>We evaluate the composite function on an <span class="math inline">\(x\)</span> by applying the <em>inner function</em> first, followed by the <em>outer function</em>.</p>
+<blockquote>
+<p><span class="math display">\[(f(g(x)))&#39; = f&#39;(g(x))g&#39;(x)\]</span> “Derivative of the outer, applied to the inner, times the derivative of the inner”</p>
+</blockquote>
+<p>Examples:</p>
+<ul>
+<li><span class="math inline">\(\sin(x^3)\)</span>. Here <span class="math inline">\(f(u) = \sin u\)</span>, <span class="math inline">\(u=g(x) = x^3\)</span>. Derivative is <span class="math inline">\(\cos(x^3)3x^2\)</span>.</li>
+<li><span class="math inline">\(\tan\left(\frac{1}{1+x}\right)\)</span>.</li>
+<li><span class="math inline">\(\cos(\cos x)\)</span>.</li>
+</ul>
+<p>Alternative formulation:</p>
+<blockquote>
+<p>If <span class="math inline">\(u=g(x)\)</span>, and <span class="math inline">\(y=f(u)\)</span>, we can view <span class="math inline">\(y=f(g(x))\)</span> as a function of <span class="math inline">\(x\)</span>. Then: <span class="math display">\[\frac{dy}{dx} = \frac{dy}{du}\cdot\frac{du}{dx}\]</span></p>
+</blockquote>
+<p>Special case of chain rule:</p>
+<blockquote>
+<p><strong>General Power Rule</strong> <span class="math display">\[\frac{d}{dx}g(x)^n = n g(x)^{n-1}g&#39;(x)\]</span></p>
+</blockquote>
+</body>
+</html>

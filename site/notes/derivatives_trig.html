@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="derivatives-of-trigonometric-functions">Derivatives of Trigonometric Functions</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 3.6</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 3.6: 5, 7, 17, 21, 27, 29, 41, 45</li>
+<li>To turn in (together with 3.7): 3.6 18, 28, 42</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="derivatives-of-sine-and-cosine">Derivatives of sine and cosine</h3>
+<blockquote>
+<p><span class="math display">\[\frac{d}{dx}\sin x = \cos x,\qquad \frac{d}{dx} \cos x = -\sin x\]</span></p>
+</blockquote>
+<p>Watch out for the minus sign!</p>
+<p>Proof:</p>
+<ul>
+<li>Definition of derivative: <span class="math inline">\(\frac{d}{dx}\sin x = \lim_{h\to 0}\frac{\sin(x+h) - \sin(x)}{h}\)</span></li>
+<li>Use trig identity: <span class="math inline">\(\sin(x+h) = \sin x \cos h + \cos x \sin h\)</span></li>
+<li>Algebra</li>
+</ul>
+<p>Second derivatives:</p>
+<blockquote>
+<p><span class="math display">\[\frac{d^x}{dx^2} \sin x = - \sin x, \qquad \frac{d^2}{dx^2} \cos x = - \cos x\]</span> Both <span class="math inline">\(\sin\)</span> and <span class="math inline">\(\cos\)</span> satisfy the differential equation <span class="math inline">\(f&#39;&#39;(x) = f(x)\)</span>.</p>
+</blockquote>
+<p>Practice problems: Derivatives of <span class="math inline">\(\sin x + \cos x\)</span>, <span class="math inline">\(x\sin(2x)\)</span>, <span class="math inline">\(\frac{x}{\cos x}\)</span></p>
+<h3 id="derivatives-of-other-trigonometric-functions">Derivatives of other trigonometric functions</h3>
+<p>Other trigonometric functions are written in terms of sine and cosine. We can compute their derivatives using the derivatives of <span class="math inline">\(\sin\)</span> and <span class="math inline">\(\cos\)</span>.</p>
+<blockquote>
+<p><span class="math display">\[\frac{d}{dx}\tan x = \sec^2x = 1 + \tan^2x, \qquad \frac{d}{dx}\sec x = \sec x \tan x\]</span></p>
+</blockquote>
+<p>Proof:</p>
+<ul>
+<li><span class="math inline">\(\tan x = \frac{\sin x}{\cos x}\)</span></li>
+<li>Apply quotient rule: <span class="math inline">\(\tan&#39; x = \frac{\sin^2 x + \cos^2 x}{\cos^2 x}\)</span></li>
+<li>Numerator equal 1, so this is <span class="math inline">\(\sec^2x\)</span>.</li>
+<li>Alternatively, rewrite it as <span class="math inline">\(1 + \frac{\sin^2x}{\cos^2x} = 1+\tan^2x\)</span>.</li>
+</ul>
+<p>Practice: Do the same for <span class="math inline">\(\sec x\)</span>.</p>
+<p>Practice: Compute the tangent lines to <span class="math inline">\(\tan x\)</span> at <span class="math inline">\(x=0\)</span> and at <span class="math inline">\(x=\frac{\pi}{4}\)</span>.</p>
+</body>
+</html>

@@ -72,17 +72,19 @@ Day 3
 ## Week  6 (02/13-02/17)
 
 Day 1
-  ~ Derivatives for trigonometric functions
+  ~ [Derivatives for trigonometric functions](notes/derivatives_trig.md)
 
     Homework Due: 3.2 16, 20, 26, 36, 66
 
 Day 2
-  ~ Chain rule and Implicit differentiation
+  ~ [Chain rule](notes/chain_rule.md)
+
+Day 3
+  ~ Implicit differentiation
 
     Related rates
 
-Day 3
-  ~ Linear Approximation and applications
+    Linear Approximation and applications
 
     Homework Due: 3.3 4, 18, 32, 3.5 12, 14
 
@@ -90,6 +92,8 @@ Day 3
 
 Day 1
   ~ Extreme values
+
+    Homework Due: 3.6 18, 28, 42, 3.7 12, 70
 
 Day 2
   ~ Mean value theorem, monotonicity
