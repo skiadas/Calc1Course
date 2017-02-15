@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="implicit-differentiation">Implicit Differentiation</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 3.8</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 3.8: 3, 5, 7, 9, 11, 31, 33, 39</li>
+<li>To turn in (together with 3.9): 3.8 6, 10, 38</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="implicit-differentiation-1">Implicit Differentiation</h3>
+<p>Implicit differentiation is used when we have a relation between two variables <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, which would in theory allow us to write <span class="math inline">\(y\)</span> as a function of <span class="math inline">\(x\)</span>, but when actually doing so might be hard to do.</p>
+<p>Example:</p>
+<p>Let us look at a case that we can solve in two ways.</p>
+<ul>
+<li>Imagine we have the equation: <span class="math inline">\(x^2 + y^2 = 1\)</span>.</li>
+<li>Then <span class="math inline">\(y\)</span> can be thought of as a function of <span class="math inline">\(x\)</span>.</li>
+<li>We could in fact solve it, and get <span class="math inline">\(y = \sqrt{1-x^2}\)</span>.</li>
+<li>Then we can compute the derivative by chain rule: <span class="math inline">\(\frac{dy}{dx} = \frac{-x}{\sqrt{1-x^2}}\)</span>.</li>
+<li>Alternatively, we can differentiate the formula <span class="math inline">\(x^2+y^2 = 1\)</span> <strong>treating <span class="math inline">\(y=y(x)\)</span> as a function of <span class="math inline">\(x\)</span></strong>.</li>
+<li>This gives us: <span class="math inline">\(2x + 2y \frac{dy}{dx} = 0\)</span></li>
+<li>Solving for <span class="math inline">\(\frac{dy}{dx}\)</span> gives us: <span class="math inline">\(\frac{dy}{dx} = - \frac{x}{y}\)</span></li>
+<li>Since <span class="math inline">\(y=\sqrt{1-x^2}\)</span>, these two formulas are the same.</li>
+</ul>
+<blockquote>
+<p><strong>Implicit Differentiation</strong></p>
+<p>Instead of a function <span class="math inline">\(y=y(x)\)</span>, we are given a formula <span class="math inline">\(F(x, y) = c\)</span> that relates <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</p>
+<p>We differentiate that formula with respect to <span class="math inline">\(x\)</span>, treating <span class="math inline">\(y\)</span> as a function of <span class="math inline">\(x\)</span>.</p>
+<p>Then we solve the resulting equation for <span class="math inline">\(\frac{dy}{dx}\)</span>. The result will contain both <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</p>
+</blockquote>
+<p>Key property: The chain rule tells us that if <span class="math inline">\(y\)</span> is a function of <span class="math inline">\(x\)</span>, then: <span class="math display">\[\frac{d}{dx}f(y) = f&#39;(y) \frac{dy}{dx}\]</span></p>
+<p>Example: Consider the relation <span class="math inline">\(y^3+xy^2=x^2+1\)</span>. The point <span class="math inline">\((1, 1)\)</span> belongs to this curve. We want to find the equation of the tangent line to this graph at that point.</p>
+<p>The equation would be: <span class="math display">\[y-1 = \left.\frac{dy}{dx}\right|_{(x,y)=(1,1)}(x-1)\]</span> We use implicit differentiation to compute that derivative. We have: <span class="math display">\[3y^2\frac{dy}{dx} + y^2 + 2xy\frac{dy}{dx} = 2x\]</span> Solving for <span class="math inline">\(\frac{dy}{dx}\)</span>: <span class="math display">\[\frac{dy}{dx} = \frac{2x-y^2}{3y^2+2xy}\]</span> Plugging in <span class="math inline">\((x, y) = (1, 1)\)</span>: <span class="math display">\[\frac{dy}{dx} = \frac{1}{5}\]</span> So tangent line equation becomes: <span class="math display">\[y-1 = \frac{1}{5}(x-1)\]</span></p>
+</body>
+</html>

@@ -79,10 +79,10 @@ Day 1
 Day 2
   ~ [Chain rule](notes/chain_rule.md)
 
-Day 3
-  ~ Implicit differentiation
+    [Implicit differentiation](notes/implicit_differentiation.md)
 
-    Related rates
+Day 3
+  ~ Related rates
 
     Linear Approximation and applications
 
@@ -97,6 +97,8 @@ Day 1
 
 Day 2
   ~ Mean value theorem, monotonicity
+
+    Homework Due: 3.8 6, 10, 38, 3.9 TBA
 
 Day 3
   ~ Graph sketching
