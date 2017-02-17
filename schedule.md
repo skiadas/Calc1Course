@@ -54,7 +54,7 @@ Day 2
 Day 3
   ~ [Derivative rules](notes/derivatives_rules.md)
 
-    Homework Due: 3.1 4, 26, 34, 28
+    Homework Due: 3.1 4, 26, 34, 38
 
 ## Week  5 (02/06-02/10)
 
@@ -82,23 +82,23 @@ Day 2
     [Implicit differentiation](notes/implicit_differentiation.md)
 
 Day 3
-  ~ Related rates
-
-    Linear Approximation and applications
+  ~ [Related rates](notes/related_rates.md)
 
     Homework Due: 3.3 4, 18, 32, 3.5 12, 14
 
 ## Week  7 (02/20-02/24)
 
 Day 1
-  ~ Extreme values
+  ~ Linear Approximation and applications
+
+    Extreme values
 
     Homework Due: 3.6 18, 28, 42, 3.7 12, 70
 
 Day 2
   ~ Mean value theorem, monotonicity
 
-    Homework Due: 3.8 6, 10, 38, 3.9 TBA
+    Homework Due: 3.8 6, 10, 38, 3.9 14, 16
 
 Day 3
   ~ Graph sketching
