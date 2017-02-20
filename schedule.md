@@ -89,19 +89,19 @@ Day 3
 ## Week  7 (02/20-02/24)
 
 Day 1
-  ~ Linear Approximation and applications
+  ~ [Linear Approximation and applications](notes/linear_approx.md)
 
-    Extreme values
+    [Extreme values](notes/extreme_values.md)
 
     Homework Due: 3.6 18, 28, 42, 3.7 12, 70
 
 Day 2
-  ~ Mean value theorem, monotonicity
+  ~ [Extreme values](notes/extreme_values.md)
 
     Homework Due: 3.8 6, 10, 38, 3.9 14, 16
 
 Day 3
-  ~ Graph sketching
+  ~ Mean value theorem, monotonicity
 
 ## Week  8 (02/27-03/03)
 
@@ -118,6 +118,8 @@ Day 3
 
 Day 1
   ~ Graph sketching
+
+    Homework Due: 4.1 14, 46, 52, 4.2 18, 30
 
 Day 2
   ~ (At conference)

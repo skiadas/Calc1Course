@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="extreme-values">Extreme Values</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 4.2</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 4.2 3, 7, 17, 19, 25, 29, 40, 41, 61</li>
+<li>In class: 4.2 63, 64</li>
+<li>To turn in (together with 4.1): 4.2 18, 30</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="extreme-values-1">Extreme Values</h3>
+<p>By far the most important application of derivatives is in optimization, namely the search for maximum and minimum values for functions.</p>
+<blockquote>
+<p><strong>Extreme Values</strong></p>
+<p>If <span class="math inline">\(f(x)\)</span> is a function defined on an interval <span class="math inline">\(I\)</span>, and we consider a point <span class="math inline">\(c\)</span> in that interval <span class="math inline">\(I\)</span>, then we say that <span class="math inline">\(f(a)\)</span> is: - An <strong>absolute maximum</strong> of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\(I\)</span> if <span class="math inline">\(f(a)\leq f(x)\)</span> for all <span class="math inline">\(x\in I\)</span>. - An <strong>absolute minimum</strong> of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\(I\)</span> if <span class="math inline">\(f(a)\geq f(x)\)</span> for all <span class="math inline">\(x\in I\)</span>. - An <strong>local maximum</strong> of <span class="math inline">\(f(x)\)</span> at <span class="math inline">\(a\)</span> if <span class="math inline">\(f(a)\leq f(x)\)</span> for all <span class="math inline">\(x\)</span> in a small interval around <span class="math inline">\(a\)</span>. - An <strong>local minimum</strong> of <span class="math inline">\(f(x)\)</span> at <span class="math inline">\(a\)</span> if <span class="math inline">\(f(a)\geq f(x)\)</span> for all <span class="math inline">\(x\)</span> in a small interval around <span class="math inline">\(a\)</span>.</p>
+</blockquote>
+<p>The first main tool for finding extreme values is the following:</p>
+<blockquote>
+<p><strong>Extreme Value Theorem</strong></p>
+<p>If <span class="math inline">\(f\)</span> is a continuous function on a <em>closed</em> interval <span class="math inline">\([a, b]\)</span>, then <span class="math inline">\(f\)</span> takes both an absolute maximum value and an absolute minimum value on that interval.</p>
+<p>This theorem does <em>not</em> work if the function is not continuous, or if the interval is not closed. Figure 2 in the book contains graphical examples of what can go wrong.</p>
+</blockquote>
+<p>This theorem guarantees for us that under certain conditions an absolute max/min exists. It does not tell us how to find it. But every absolute maximum/minimum will also be a local one, and we will now develop ways for finding local maxima/minima.</p>
+<p>In this direction, the following definition will be key.</p>
+<blockquote>
+<p><strong>Critical Points</strong></p>
+<p>A point <span class="math inline">\(c\)</span> is called a <strong>critical point</strong> for <span class="math inline">\(f\)</span> if <span class="math inline">\(f&#39;(c) = 0\)</span> or <span class="math inline">\(f&#39;(c)\)</span> does not exist.</p>
+</blockquote>
+<p>The following theorem helps us find local extrema:</p>
+<blockquote>
+<p><strong>Fermat’s Theorem on local extrema</strong></p>
+<p>If <span class="math inline">\(c\)</span> is an interior point of domain of <span class="math inline">\(f\)</span>, and <span class="math inline">\(f(c)\)</span> is a local minimum or maximum of <span class="math inline">\(f\)</span>, then <span class="math inline">\(c\)</span> must be a critical point.</p>
+</blockquote>
+<p>This all provides us with a method of finding absolute maxima/minima:</p>
+<blockquote>
+<p><strong>Finding Extreme Values</strong></p>
+<p>If <span class="math inline">\(f(x)\)</span> is a continuous function on a closed interval <span class="math inline">\([a, b]\)</span>, then: - The Extreme Value Theorem guarantees that there are absolute minima and maxima for the function. - To find them we must look at: - The endpoints <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> - The critical points, where <span class="math inline">\(f&#39;(c)\)</span> is <span class="math inline">\(0\)</span> or does not exist. - Whichever of these points has the largest/smallest value is the absolute max/min.</p>
+</blockquote>
+<p>Example: Consider <span class="math inline">\(f(x) = x^3-6x^2+8\)</span> on the interval <span class="math inline">\([1, 6]\)</span>. The function is continuous since it is a polynomial. So it must have a maximum and minimum. To find them, we look at the endpoints and the critical points:</p>
+<ul>
+<li>Endpoints: <span class="math inline">\(f(1) = 1-6+8 = 1\)</span>, <span class="math inline">\(f(6) = 6^3-6\cdot 6^2 + 8 = 8\)</span>.</li>
+<li>Critical points: <span class="math inline">\(f&#39;(x) = 3x^2-6x = 0\)</span>. So we have one solution <span class="math inline">\(x=0\)</span> and another <span class="math inline">\(x=2\)</span>. Since <span class="math inline">\(0\)</span> is outside the interval, we ignore it. So we compute <span class="math inline">\(f(2) = 2^3 - 6\cdot 2^2 + 8 = -24\)</span>.</li>
+</ul>
+<p>From the three point we had to compute, we find the minimum at <span class="math inline">\(c=2\)</span>, with value <span class="math inline">\(-24\)</span>, and the maximum at <span class="math inline">\(c=6\)</span> with value <span class="math inline">\(8\)</span>.</p>
+<h3 id="rolles-theorem">Rolle’s Theorem</h3>
+<p>An important consequence of the study of extreme is Rolle’s Theorem. It states the following:</p>
+<blockquote>
+<p><strong>Rolle’s Theorem</strong></p>
+<p>If <span class="math inline">\(f(x)\)</span> is continuous on <span class="math inline">\([a, b]\)</span> and differentiable on <span class="math inline">\((a, b)\)</span>, and <span class="math inline">\(f(a) = f(b)\)</span>, then there is a <span class="math inline">\(c\in(a, b)\)</span> such that <span class="math inline">\(f&#39;(c) = 0\)</span>.</p>
+</blockquote>
+<p>Proof: By the extreme value theorem, there must be a minimum and a maximum for the function <span class="math inline">\(f\)</span>. If one of these occurs at an interior point <span class="math inline">\(c\in(a, b)\)</span>, then Fermat’s Theorem guarantees that <span class="math inline">\(f&#39;(c) = 0\)</span>. If not, then one endpoint is the maximum value and one is the minimum value. Since the endpoints have the same value, this would mean that the function must be constant.</p>
+<p>And important consequence of Rolle’s Theorem is the following:</p>
+<blockquote>
+<p>If <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> are two zeros of <span class="math inline">\(f\)</span>, i.e. <span class="math inline">\(f(a) = f(b) = 0\)</span>, and <span class="math inline">\(f\)</span> is differentiable on <span class="math inline">\([a, b]\)</span>, then <span class="math inline">\(f&#39;(x)\)</span> must have a zero in <span class="math inline">\([a, b]\)</span>.</p>
+<p>In other words, <em>the derivative of a function must have a zero inbetween any two zeros of the function</em>.</p>
+</blockquote>
+</body>
+</html>

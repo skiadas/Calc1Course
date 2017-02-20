@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="linear-approximation">Linear Approximation</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 4.1</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 4.1 13, 15, 17, 19, 23, 25, 33, 38, 45</li>
+<li>To turn in (together with 4.2): 4.1 14, 46, 52</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="linear-approximation-1">Linear Approximation</h3>
+<p>Derivatives allow us to approximate changes to a function over a small interval.</p>
+<p>Some notation:</p>
+<ul>
+<li><span class="math inline">\(\Delta x\)</span> represents a small change in <span class="math inline">\(x\)</span>. So we consider our <span class="math inline">\(x\)</span> changing from <span class="math inline">\(a\)</span> to <span class="math inline">\(a+\Delta x\)</span>.</li>
+<li>Denote by <span class="math inline">\(\Delta f = f(a+\Delta x) - f(a)\)</span>. Namely how much <span class="math inline">\(f\)</span> has changed as <span class="math inline">\(x\)</span> changes from <span class="math inline">\(a\)</span> to <span class="math inline">\(a+\Delta x\)</span>.</li>
+</ul>
+<blockquote>
+<p><strong>Linear Approximation of <span class="math inline">\(\Delta f\)</span></strong>: If <span class="math inline">\(f\)</span> is differentiable at <span class="math inline">\(a\)</span>, and <span class="math inline">\(\Delta x\)</span> is small, then: <span class="math display">\[\Delta f \approx f&#39;(a) \Delta x\]</span> In other words, we can approximate the <em>actual change</em> <span class="math inline">\(\Delta f\)</span> with the quantity <span class="math inline">\(f&#39;(a)\Delta x\)</span>.</p>
+<p>In graphical terms, the linear approximation says that the tangent line is a good approximation to the function as long as we keep close to the point of tangency.</p>
+</blockquote>
+<p>Example: Suppose <span class="math inline">\(f(x) = \frac{1}{x}\)</span>, <span class="math inline">\(a=5\)</span> and <span class="math inline">\(\Delta x = 0.1\)</span>. Then: <span class="math display">\[\Delta f = f(5.1) - f(5) = \frac{1}{5.1} - \frac{1}{5} = -0.003921569\]</span> Instead we could estimate this quantity via: <span class="math display">\[f&#39;(5)\cdot 0.1 = \frac{-1}{5^2} \cdot 0.1 = -0.004\]</span> The error we have made is only <span class="math inline">\(-0.004-(-0.003921569) = -0.000078431\)</span>, which is about a <span class="math inline">\(2\%\)</span> error relative to the actual value.</p>
+<blockquote>
+<p><strong>Differential Notation</strong></p>
+<p>In this notation we write <span class="math inline">\(dx=\Delta x\)</span> and <span class="math inline">\(dy = f&#39;(a)dx\)</span>. Then: <span class="math display">\[\Delta y \approx dy\]</span></p>
+</blockquote>
+<p>We can write the same approximation in terms of <span class="math inline">\(f(x)\)</span>. For that we write <span class="math inline">\(x = a + \Delta x\)</span>, so <span class="math inline">\(\Delta f = f(x) - f(a)\)</span>, and <span class="math inline">\(dy = f&#39;(a)(x-a)\)</span>. We then have the following approximation:</p>
+<blockquote>
+<p><strong>Approximation of <span class="math inline">\(f(x)\)</span> by its linearization</strong></p>
+<p>If f(x) is differentiable at <span class="math inline">\(x=a\)</span>, and <span class="math inline">\(x\)</span> is a number is close to <span class="math inline">\(a\)</span>, then: <span class="math display">\[f(x) \approx L(x) = f(a) + f&#39;(a)(x-a)\]</span></p>
+</blockquote>
+<p>Example: If <span class="math inline">\(f(x) = \sqrt{x}\)</span> and <span class="math inline">\(a=4\)</span>. Then <span class="math inline">\(f&#39;(x) = \frac{1}{2\sqrt{x}}\)</span>, and we can compute the linearization: <span class="math display">\[L(x) = f(4) + f&#39;(4)(x-4) = 2 + \frac{1}{4}(x-4)\]</span> As an example, let us estimate the value of <span class="math inline">\(\sqrt{4.1}\)</span>, which is in reality very close to <span class="math inline">\(2.024846\)</span>. Our linearization would instead give us: <span class="math display">\[L(x)  = 2 + \frac{1}{4}(4.1-4) = 2.025\]</span></p>
+<p>Linearizations have numerous applications in other sciences.</p>
+</body>
+</html>
