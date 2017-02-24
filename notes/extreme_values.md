@@ -19,6 +19,7 @@ By far the most important application of derivatives is in optimization, namely 
 > **Extreme Values**
 >
 > If $f(x)$ is a function defined on an interval $I$, and we consider a point $c$ in that interval $I$, then we say that $f(a)$ is:
+>
 > - An **absolute maximum** of $f(x)$ on the interval $I$ if $f(a)\leq f(x)$ for all $x\in I$.
 > - An **absolute minimum** of $f(x)$ on the interval $I$ if $f(a)\geq f(x)$ for all $x\in I$.
 > - An **local maximum** of $f(x)$ at $a$ if $f(a)\leq f(x)$ for all $x$ in a small interval around $a$.
@@ -51,6 +52,7 @@ This all provides us with a method of finding absolute maxima/minima:
 > **Finding Extreme Values**
 >
 > If $f(x)$ is a continuous function on a closed interval $[a, b]$, then:
+>
 > - The Extreme Value Theorem guarantees that there are absolute minima and maxima for the function.
 > - To find them we must look at:
 >     - The endpoints $a$, $b$

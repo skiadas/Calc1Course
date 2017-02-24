@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="mean-value-theorem">Mean Value Theorem</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 4.3</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 4.3 13, 15, 17, 21, 23, 27, 35, 39</li>
+<li>In class: 4.3 14, 22</li>
+<li>To turn in: 4.3 20, 26, 38, 46</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="the-mean-value-theorem">The Mean Value Theorem</h3>
+<p>The mean value theorem relates the values of a function at two points to the value of the derivative somewhere between the two points.</p>
+<blockquote>
+<p><strong>Mean Value Theorem</strong></p>
+<p>If <span class="math inline">\(f(x)\)</span> is continous on <span class="math inline">\([a, b]\)</span> and differentiable on <span class="math inline">\((a, b)\)</span>, then there is a point <span class="math inline">\(c\in(a, b)\)</span> such that: <span class="math display">\[f&#39;(c) = \frac{f(b)-f(a)}{b-a}\]</span></p>
+</blockquote>
+<p>Rate-of-change interpretation: The average rate of change over an interval must equal the instantaneous rate of change somewhere along the interval.</p>
+<p>A very important corollary of this theorem is the following:</p>
+<blockquote>
+<p>If <span class="math inline">\(f(x)\)</span> is differentiable and <span class="math inline">\(f&#39;(x) = 0\)</span> for all <span class="math inline">\(x\in(a, b)\)</span>, then <span class="math inline">\(f(x)\)</span> must be a constant function on <span class="math inline">\((a, b)\)</span>.</p>
+</blockquote>
+<p>Proof:</p>
+<ul>
+<li>We can instead show that any two points in the interval <span class="math inline">\((a, b)\)</span> must have the same value.</li>
+<li>If <span class="math inline">\(c&lt;d\)</span> are two points in <span class="math inline">\((a, b)\)</span>, then the mean value theorem says that <span class="math inline">\(f(d)-f(c) = f&#39;(x)(d-c)\)</span> for some <span class="math inline">\(x\in(c, d)\)</span>. But then that <span class="math inline">\(x\)</span> must also be in <span class="math inline">\((a, b)\)</span>, so <span class="math inline">\(f&#39;(x) = 0\)</span>. But then <span class="math inline">\(f(d)-f(c) = 0\)</span>, so <span class="math inline">\(f(c) = f(d)\)</span>.</li>
+</ul>
+<p>A second important consequence has to do with how the sign of the derivative dictates the behavior of the function:</p>
+<blockquote>
+<p>A function <span class="math inline">\(f\)</span> is <strong>(strictly) increasing</strong> on an interval <span class="math inline">\((a, b)\)</span> if for any two points <span class="math inline">\(c&lt;d\)</span> in <span class="math inline">\((a, b)\)</span> we have <span class="math inline">\(f(c) &lt; f(d)\)</span>. In other words <em>later points have higher values</em>. Conversely the function is called <strong>(strictly) decreasing</strong> if for any two points <span class="math inline">\(c&lt;d\)</span> we have <span class="math inline">\(f(c) &gt; f(d)\)</span>, so later points have lower values.</p>
+<ul>
+<li>If <span class="math inline">\(f(x)\)</span> is differentiable on <span class="math inline">\((a, b)\)</span> and <span class="math inline">\(f&#39;(x) &gt; 0\)</span> for all <span class="math inline">\(x\in(a, b)\)</span>, then <span class="math inline">\(f\)</span> must be strictly increasing on <span class="math inline">\((a, b)\)</span></li>
+<li>If <span class="math inline">\(f(x)\)</span> is differentiable on <span class="math inline">\((a, b)\)</span> and <span class="math inline">\(f&#39;(x) &lt; 0\)</span> for all <span class="math inline">\(x\in(a, b)\)</span>, then <span class="math inline">\(f\)</span> must be strictly decreasing on <span class="math inline">\((a, b)\)</span></li>
+</ul>
+</blockquote>
+<p>This again follows from the mean value theorem.</p>
+<p>This result can help us examine what happens at critical points. The question basically is the following: Can we determine if a critical point is a local max or min (or neither) by considering the derivative?</p>
+<p>The answer is simple: If the derivative is positive before the critical point and negative after the critical point, then the function must have been increasing before the point and decreasing after it, making the point a local maximum. And conversely for a minimum.</p>
+<blockquote>
+<p><strong>First Derivative Test for Critical Points</strong></p>
+<p>If <span class="math inline">\(f(x)\)</span> is differentiable and <span class="math inline">\(c\)</span> is a critical point of <span class="math inline">\(f(x)\)</span>. Then:</p>
+<ul>
+<li>If <span class="math inline">\(f(x)\)</span> changes from positive to negative at <span class="math inline">\(c\)</span>, then <span class="math inline">\(f(c)\)</span> is a local maximum.</li>
+<li>If <span class="math inline">\(f(x)\)</span> changes from negative to positive at <span class="math inline">\(c\)</span>, then <span class="math inline">\(f(c)\)</span> is a local minimum.</li>
+<li>If <span class="math inline">\(f(x)\)</span> preserves its sign, then the point is neither local maximum nor local minimum.</li>
+</ul>
+</blockquote>
+<h3 id="proof-of-the-mean-value-theorem">Proof of the Mean Value Theorem</h3>
+<p>The insight of the proof is to consider the distance between the function and the straight line connecting the endpoints. So we define a new function: <span class="math display">\[g(x) = f(x) - f(a) - \frac{f(b)-f(a)}{b-a}(x-a)\]</span> Then we can observe that <span class="math inline">\(g(x)\)</span> is differentiable, and that <span class="math inline">\(g(a) = g(b) = 0\)</span>. So by Rolle’s theorem, we can see that the derivative <span class="math inline">\(g&#39;(x)\)</span> must have a zero at some point <span class="math inline">\(c\)</span>, so <span class="math inline">\(g&#39;(c)=0\)</span>. But: <span class="math display">\[g&#39;(x) = f&#39;(x) - \frac{f(b)-f(a)}{b-a}\]</span> So if this equals zero, we get that <span class="math inline">\(f&#39;(c) = \frac{f(b)-f(a)}{b-a}\)</span>.</p>
+</body>
+</html>

@@ -101,7 +101,7 @@ Day 2
     Homework Due: 3.8 6, 10, 38, 3.9 14, 16
 
 Day 3
-  ~ Mean value theorem, monotonicity
+  ~ [Mean value theorem, monotonicity](notes/mean_value_theorem.md)
 
 ## Week  8 (02/27-03/03)
 
@@ -132,6 +132,7 @@ Day 3
 Day 1
   ~ Applied optimization
 
+    Homework Due: 4.3 20, 26, 38, 46
 Day 2
   ~ Newton's method
 
