@@ -49,12 +49,12 @@ Day 1
 Day 2
   ~ [Derivative as a function](notes/derivatives_function.md)
 
-    Homework Due: 2.7 8, 20, 2.8 2, 6
+    Homework 4 Due: 2.7 8, 20, 2.8 2, 6
 
 Day 3
   ~ [Derivative rules](notes/derivatives_rules.md)
 
-    Homework Due: 3.1 4, 26, 34, 38
+    Homework 5 Due: 3.1 4, 26, 34, 38
 
 ## Week  5 (02/06-02/10)
 
@@ -74,7 +74,7 @@ Day 3
 Day 1
   ~ [Derivatives for trigonometric functions](notes/derivatives_trig.md)
 
-    Homework Due: 3.2 16, 20, 26, 36, 66
+    Homework 6 Due: 3.2 16, 20, 26, 36, 66
 
 Day 2
   ~ [Chain rule](notes/chain_rule.md)
@@ -84,7 +84,7 @@ Day 2
 Day 3
   ~ [Related rates](notes/related_rates.md)
 
-    Homework Due: 3.3 4, 18, 32, 3.5 12, 14
+    Homework 7 Due: 3.3 4, 18, 32, 3.5 12, 14
 
 ## Week  7 (02/20-02/24)
 
@@ -93,12 +93,12 @@ Day 1
 
     [Extreme values](notes/extreme_values.md)
 
-    Homework Due: 3.6 18, 28, 42, 3.7 12, 70
+    Homework 8 Due: 3.6 18, 28, 42, 3.7 12, 70
 
 Day 2
   ~ [Extreme values](notes/extreme_values.md)
 
-    Homework Due: 3.8 6, 10, 38, 3.9 14, 16
+    Homework 9 Due: 3.8 6, 10, 38, 3.9 14, 16
 
 Day 3
   ~ [Mean value theorem, monotonicity](notes/mean_value_theorem.md)
@@ -117,9 +117,11 @@ Day 3
 ## Week  9 (03/06-03/10)
 
 Day 1
-  ~ Graph sketching
+  ~ [Mean value theorem, monotonicity (cont)](notes/mean_value_theorem.md)
 
-    Homework Due: 4.1 14, 46, 52, 4.2 18, 30
+    [Graph sketching](notes/graph_sketching.md)
+
+    Homework 10 Due: 4.1 14, 46, 52, 4.2 18, 30
 
 Day 2
   ~ (At conference)
@@ -130,14 +132,16 @@ Day 3
 ## Week 10 (03/13-03/17)
 
 Day 1
+  ~ [Graph sketching](notes/graph_sketching.md)
+
+    Homework 11 Due: 4.3 20, 26, 38, 46
+Day 2
   ~ Applied optimization
 
-    Homework Due: 4.3 20, 26, 38, 46
-Day 2
+Day 3
   ~ Newton's method
 
-Day 3
-  ~ Review
+    Homework 12 Due: 4.4 6, 24, 4.5 16, 32
 
 ## Week 11 (03/20-03/24)
 
