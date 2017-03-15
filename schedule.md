@@ -119,8 +119,6 @@ Day 3
 Day 1
   ~ [Mean value theorem, monotonicity (cont)](notes/mean_value_theorem.md)
 
-    [Graph sketching](notes/graph_sketching.md)
-
     Homework 10 Due: 4.1 14, 46, 52, 4.2 18, 30
 
 Day 2
@@ -136,10 +134,10 @@ Day 1
 
     Homework 11 Due: 4.3 20, 26, 38, 46
 Day 2
-  ~ Applied optimization
+  ~ [Graph sketching](notes/graph_sketching.md)
 
 Day 3
-  ~ Newton's method
+  ~ Applied optimization
 
     Homework 12 Due: 4.4 6, 24, 4.5 16, 32
 
@@ -149,37 +147,37 @@ Day 1
   ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 2
-  ~ Antiderivatives
+  ~ Newton's method
 
 Day 3
-  ~ Introduction to computing areas
+  ~ Antiderivatives
 
 ## Week 12 (03/27-03/31)
 
 Day 1
-  ~ The definite integral
+  ~ Introduction to computing areas
 
 Day 2
-  ~ Fundamental theorem of Calculus
+  ~ The definite integral
 
 Day 3
-  ~ Fundamental theorem of Calculus (cont)
+  ~ Fundamental theorem of Calculus
 
 ## Week 13 (04/03-04/07)
 
 Day 1
-  ~ The substitution method
+  ~ Fundamental theorem of Calculus (cont)
 
 Day 2
-  ~ Area between curves
+  ~ The substitution method
 
 Day 3
-  ~ Area between curves (cont)
+  ~ Area between curves
 
 ## Week 14 (04/10-04/14)
 
 Day 1
-  ~ TBD
+  ~ Area between curves (cont)
 
 Day 2
   ~ TBD
