@@ -137,7 +137,7 @@ Day 2
   ~ [Graph sketching](notes/graph_sketching.md)
 
 Day 3
-  ~ Applied optimization
+  ~ [Applied optimization](notes/applied_optimization.md)
 
     Homework 12 Due: 4.4 6, 24, 4.5 16, 32
 
@@ -147,15 +147,19 @@ Day 1
   ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 2
-  ~ Newton's method
+  ~ [Applied optimization (cont)](notes/applied_optimization.md)
 
 Day 3
-  ~ Antiderivatives
+  ~ Newton's method
+
+    Antiderivatives
 
 ## Week 12 (03/27-03/31)
 
 Day 1
   ~ Introduction to computing areas
+
+    Homework 13 Due: 4.6 2, 4, 8, 20, 52
 
 Day 2
   ~ The definite integral
