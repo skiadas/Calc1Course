@@ -2,7 +2,7 @@
 
 ## Reading
 
-- Section 4.
+- Section 4.6
 
 ## Practice problems
 

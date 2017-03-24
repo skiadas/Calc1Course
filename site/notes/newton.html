@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="newtons-method">Newton’s method</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 4.7</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 4.7: 1, 3, 5, 7, 11, 15</li>
+<li>To turn in: 4.7 2, 16</li>
+<li>In class: 4.7 12, 34</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="newtons-method-1">Newton’s Method</h3>
+<p>Newton’s Method has a simple goal: To find a root for a function, i.e. a value <span class="math inline">\(x\)</span> for which <span class="math inline">\(f(x) = 0\)</span>.</p>
+<p>The method works as follows:</p>
+<ul>
+<li>Start with an initial “guess”, <span class="math inline">\(a_0\)</span>.</li>
+<li>From a guess (estimate) <span class="math inline">\(a_n\)</span>, generate a next guess (estimate) <span class="math inline">\(a_{n+1}\)</span>, which is hoped to be closer to the solution. This works better than it sounds.</li>
+<li>We repeat this process until we arrive at a number that is close enough to a solution. We can test that by putting the estimated value into the function.</li>
+</ul>
+<p>The formula of going from the one guess to the next is: <span class="math display">\[a_{n+1} = a_n - \frac{f(a_n)}{f&#39;(a_n)}\]</span></p>
+<p>Note that if <span class="math inline">\(a_n\)</span> is a solution, then the numerator in the fraction is zero, and hence the above formula does not change <span class="math inline">\(a_n\)</span>. The process therefore stops when each step doesn’t really improve our estimate.</p>
+<blockquote>
+<p><strong>Geometric interpretation</strong></p>
+<p>If we follow the tangent line to the graph of <span class="math inline">\(f(x)\)</span> at the point <span class="math inline">\(a_n\)</span>, and find where it meets the <span class="math inline">\(x\)</span> axis, then the next estimate <span class="math inline">\(a_{n+1}\)</span> is exactly that point.</p>
+<p>Intuitively this makes sense: If the function was fairly linear, then we want to follow that line until it hits the <span class="math inline">\(x\)</span> axis (<span class="math inline">\(y=0\)</span>).</p>
+</blockquote>
+<p>Let us do a standard example of this, to find the square root of <span class="math inline">\(2\)</span>, <span class="math inline">\(\sqrt{2}\)</span>. We can think of this as a solution to the equation: <span class="math display">\[x^2-2=0\]</span>. Therefore we have the function <span class="math inline">\(f(x) = x^2-2\)</span> and we are looking for its root.</p>
+<p>First we find an initial guess: Since <span class="math inline">\(f(1) &lt; 0\)</span> and <span class="math inline">\(f(2) &gt; 0\)</span>, we know there is a solution somewhere in the interval. It makes sense therefore to start somewhere in that interval, e.g. <span class="math inline">\(a_0=1\)</span> or <span class="math inline">\(a_0=2\)</span>. We will start with the midpoint: <span class="math display">\[a_0 = 1.5\]</span></p>
+<p>For our next estimate, we put this into the formula: <span class="math display">\[a_{n+1} = a_n - \frac{a_n^2-2}{2a_n}\]</span> If we plug <span class="math inline">\(a_0=1.5\)</span> in, we get: <span class="math display">\[a_1 = a_0 - \frac{a_0^2-2}{2a_0} = 1.5 - \frac{1.5^2 - 2}{2\times 1.5} = 1.416667\]</span></p>
+<p>For our next estimate, we plug this <span class="math inline">\(a_1 = 1.416667\)</span> in to the same formula: <span class="math display">\[a_2 = a_1 - \frac{a_1^2-2}{2a_1} = 1.416667 - \frac{1.416667^2 - 2}{2\times 1.416667} = 1.414216\]</span></p>
+<p>For our next estimate, we plug this <span class="math inline">\(a_2 = 1.414216\)</span> in to the same formula: <span class="math display">\[a_3 = a_2 - \frac{a_2^2-2}{2a_2} = 1.414216 - \frac{1.414216^2 - 2}{2\times 1.414216} = 1.414214\]</span></p>
+<p>At this point we have arrived at a close approximation of our solution. If we plug it back in, we would get the same first six decimals. So we have an estimate for <span class="math inline">\(\sqrt{2} = 1.414214\)</span>.</p>
+<p>If we did our computation with more decimal points in our estimates, we could have kept going.</p>
+<p><strong>Comparison with bisection method:</strong></p>
+<p>Recall that earlier we saw a bisection method for finding a root: Keep cutting the interval in half and choosing the correct endpoint to continue. Newton’s method is a lot faster: In just 3 steps it gave us six digits of accuracy. The bisection method would have taken roughly 15 steps.</p>
+<p>The difference is that Newton’s method does not always work well: If a function oscillates too much, it can make the sequence of numbers behave very erratically.</p>
+</body>
+</html>

@@ -150,7 +150,7 @@ Day 2
   ~ [Applied optimization (cont)](notes/applied_optimization.md)
 
 Day 3
-  ~ Newton's method
+  ~ [Newton's method](notes/newton.md)
 
     Antiderivatives
 
