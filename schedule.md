@@ -167,6 +167,8 @@ Day 2
 Day 3
   ~ Fundamental theorem of Calculus
 
+    Homework 14 Due: 4.8 14, 22, 50, 64
+
 ## Week 13 (04/03-04/07)
 
 Day 1
