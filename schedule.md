@@ -152,12 +152,12 @@ Day 2
 Day 3
   ~ [Newton's method](notes/newton.md)
 
-    Antiderivatives
-
 ## Week 12 (03/27-03/31)
 
 Day 1
-  ~ Introduction to computing areas
+  ~ [Antiderivatives](notes/antiderivatives.md)
+
+    Introduction to computing areas
 
     Homework 13 Due: 4.6 2, 4, 8, 20, 52
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="newtons-method">Newton’s method</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 4.8</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 4.8: 11, 13, 15, 23, 25, 45, 49, 65</li>
+<li>To turn in: 4.8 14, 22, 50, 64</li>
+<li>In class: 4.8 40, 41, 63</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="antiderivatives">Antiderivatives</h3>
+<blockquote>
+<p>An <strong>antiderivative</strong> for a function <span class="math inline">\(f(x)\)</span> is a function <span class="math inline">\(F(x)\)</span> such that <span class="math inline">\(F&#39;(x) = f(x)\)</span>. In this sense the antiderivative is an inverse process to the derivative.</p>
+</blockquote>
+<p>An example: Since <span class="math inline">\((\sin(3x))&#39; = 3\cos(3x)\)</span>, we can say that the function <span class="math inline">\(\sin(3x)\)</span> is <em>an antiderivative</em> for the function <span class="math inline">\(3\cos(3x)\)</span>.</p>
+<p>Note that also <span class="math inline">\(\sin(3x) + 5\)</span> would be an antiderivative, as an added constant goes away when we differentiate. In that sense we can have many antiderivatives for a function. They are however all related to each other via adding a constant, as the following theorem describes:</p>
+<blockquote>
+<p><strong>Theorem</strong></p>
+<p>If <span class="math inline">\(F(x)\)</span> is an antiderivative of <span class="math inline">\(f(x)\)</span> on an interval <span class="math inline">\((a, b)\)</span>, then all the antiderivatives of <span class="math inline">\(f(x)\)</span> have the form <span class="math inline">\(F(x) + C\)</span> for some constant <span class="math inline">\(C\)</span>.</p>
+<p>We use the symbol <span class="math inline">\(\int f(x)dx\)</span> to denote these antiderivatives, and we call it the <strong>indefinite integral</strong>. Equalities involving indefinite integrals only make sense up to an additive constant.</p>
+</blockquote>
+<p>One standard example where we can compute the antiderivative is polynomials. This essentially reverses the power rule that <span class="math inline">\(\left(x^{n+1}\right)&#39; = (n+1)x^n\)</span>:</p>
+<blockquote>
+<p><strong>Power Rule for Antiderivatives</strong></p>
+<p><span class="math display">\[\int x^n dx = \frac{x^{n+1}}{n+1} + C\]</span> as long as <span class="math inline">\(n\neq 1\)</span>.</p>
+</blockquote>
+<p>The antiderivative of <span class="math inline">\(\frac{1}{x}\)</span> cannot be obtained via the above rule. It turns out to be a very interesting function, called the <em>natural logarithm</em>, and it will be defined and discussed more in Calculus 2.</p>
+<p>The above theorem also shows us a general process for figuring out some of these antiderivatives: If we can guess a function that has the desired derivative, then we have found our antiderivative. For instance this way of thinking can produce the following antiderivatives:</p>
+<blockquote>
+<p><strong>Basic Trigonometric Antiderivatives</strong></p>
+<p><span class="math display">\[\int\sin x dx = -\cos x + C\]</span> <span class="math display">\[\int\cos x dx = \sin x + C\]</span> <span class="math display">\[\int\sec^2 x dx = \tan x + C\]</span> <span class="math display">\[\int\sec x\tan xdx = \sec x + C\]</span></p>
+</blockquote>
+<h3 id="initial-value-problems">Initial Value Problems</h3>
+<p>A first application of these ideas is the solution of simple differential equations. A differential equation is an equation where the unknown is a function <span class="math inline">\(y=y(x)\)</span>, and the equation involves the derivatives of the function. For example the antiderivative of a function <span class="math inline">\(f(x)\)</span> solves the differential equation: <span class="math display">\[\frac{dy}{dx} = f(x)\]</span></p>
+<p>In these situations the solution is only determined up to a constant <span class="math inline">\(C\)</span>. The constant can often be determined if they also provide us the value that the function must take at a particular point. This is often called an <strong>initial value</strong>.</p>
+<p><strong>Example:</strong> Find the function <span class="math inline">\(y\)</span> such that <span class="math inline">\(\frac{dy}{dx} = x^3\)</span> and with the initial value <span class="math inline">\(y(0) = 3\)</span>.</p>
+<p>We would start by computing <span class="math inline">\(\int x^3dx = \frac{1}{4}x^4 + C\)</span>. So this tells us that our function <span class="math inline">\(y\)</span> must have the form <span class="math inline">\(y(x) = \frac{1}{4} x^4 + C\)</span>. We just need to find the <span class="math inline">\(C\)</span>.</p>
+<p>But they also told us that <span class="math inline">\(y(0) = 3\)</span>. This must mean that <span class="math inline">\(3=\frac{1}{4}\times 0^4 + C = C\)</span>, so the constant must be <span class="math inline">\(C=3\)</span>. So we have our final answer: <span class="math display">\[y(x) = \frac{1}{4}x^4 + 3\]</span></p>
+</body>
+</html>
