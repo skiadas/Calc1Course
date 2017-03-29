@@ -6,8 +6,8 @@
 
 ## Practice problems
 
-- Section 4.8: 11, 13, 15, 23, 25, 45, 49, 65
-- To turn in: 4.8 14, 22, 50, 64
+- Section 4.8: 11, 13, 15, 23, 25, 45, 49, 64, 65
+- To turn in: 4.8 14, 22, 50
 - In class: 4.8 40, 41, 63
 
 ## Notes
