@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="computing-areas">Computing Areas</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 5.1</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 5.1: 7, 9, 17, 29, 37, 38, 53, 55</li>
+<li>To turn in: 5.1 8, 16, 18, 28</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="computing-areas-1">Computing Areas</h3>
+<p>A fundamental problem in many fields is the computation of the area contained between curves and axes. It all essentially boils down to the following:</p>
+<blockquote>
+<p>Given a function <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\([a, b]\)</span>, can we compute/approximate the area that is between the graph of <span class="math inline">\(f\)</span>, the <span class="math inline">\(x\)</span> axis, and the vertical lines <span class="math inline">\(x=a\)</span> and <span class="math inline">\(x=b\)</span>?</p>
+</blockquote>
+<p>Computing these areas has been a problem of interest since ancient times, when for instance people estimated the area of a circle. It still is a non-trivial problem.</p>
+<p>The method we will employ is easy:</p>
+<ul>
+<li>The one area we can directly compute easily is that of a rectangle with a given base and height.</li>
+<li>We will try to approximate other areas by dividing them into rectangles. This may not be a perfect process and result in some errors due to the rectangles being either more or less than they should.</li>
+<li>We try to minimize those errors by dividing the area into smaller and finer rectangles, an ever increasing number of them. We attempt to get a precise answer by then taking a <em>limit</em> of this process.</li>
+</ul>
+<p>As an example, suppose we want to find the area under the function <span class="math inline">\(f(x) = \sqrt{1-x^2}\)</span>, the <span class="math inline">\(x\)</span> axis, and the lines <span class="math inline">\(x=0\)</span> and <span class="math inline">\(x=1\)</span>. If you draw the picture for a second you will see that this area is one fourth of the unit circle, so we know that it should equal <span class="math inline">\(\frac{\pi}{4}\approx 0.7854\)</span>. We will see how close to that our method will get us.</p>
+<p>Start by drawing a graph of the functino from <span class="math inline">\(0\)</span> to <span class="math inline">\(1\)</span>. This will help you follow along.</p>
+<p>We can make a initial rough estimates as follows:</p>
+<ul>
+<li>Look at the largest value the function takes in the range. The rectangle with that height fully encompasses the desired area, so the area of the rectangle is an upper bound for our desired area.</li>
+<li>Look at the smallest value the function takes in the range. The rectangle with that height is fully contained within the desired area, so the area of the rectangle is a lower bound for our desired area.</li>
+</ul>
+<p>In our example, the largest value is <span class="math inline">\(1\)</span> and the smallest is <span class="math inline">\(0\)</span>, so the upper estimate would be <span class="math inline">\(1\times(1-0) = 1\)</span> and the lower estimate would be <span class="math inline">\(0\times (1-0) = 0\)</span>. So our desired area must be somewhere between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>. It’s a start, but we really should try and do better.</p>
+<p>To do better, we divide the <span class="math inline">\(x\)</span> interval into segments, then each segment will be the base for a rectangle. So we will do the following:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">interval</th>
+<th align="left">max of f</th>
+<th align="left">min of f</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\([0, 0.25]\)</span></td>
+<td align="left"><span class="math inline">\(f(0) = 1\)</span></td>
+<td align="left"><span class="math inline">\(f(0.25) = 0.9682\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\([0.25, 0.5]\)</span></td>
+<td align="left"><span class="math inline">\(f(0.25) = 0.9682\)</span></td>
+<td align="left"><span class="math inline">\(f(0.5) = 0.866\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\([0.5, 0.75]\)</span></td>
+<td align="left"><span class="math inline">\(f(0.5) = 0.866\)</span></td>
+<td align="left"><span class="math inline">\(f(0.75) = 0.6614\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\([0.75, 1]\)</span></td>
+<td align="left"><span class="math inline">\(f(0.75) = 0.6614\)</span></td>
+<td align="left"><span class="math inline">\(f(1) = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Also note that each interval has a base size of <span class="math inline">\(0.25\)</span>. Therefore if we want to estimate the interval, we can do two things: <span class="math display">\[\textrm{upper sum}=0.25\times 1 + 0.25\times 0.9682 + 0.25 \times 0.866 + 0.25 \times 0.6614 = 0.8739\]</span> and <span class="math display">\[\textrm{lower sum}=0.25\times 0.9682 + 0.25 \times 0.866 + 0.25 \times 0.6614 + 0.25\times 0 =0.6239\]</span> So now we can say that the actual area is between <span class="math inline">\(0.6239\)</span> and <span class="math inline">\(0.8739\)</span>.</p>
+<p>Notice that instead of multiplying each term with <span class="math inline">\(0.25\)</span>, we could have done one multiplication at the end: <span class="math display">\[.25\times \left(0.9682 + 0.866 + 0.6614 + 0\right) = 0.6239\]</span> This works whenever we divide into equal length intervals, and we will use it frequently in the following.</p>
+<p><strong>Practice:</strong> Try to use <span class="math inline">\(8\)</span> intervals instead.</p>
+<p>We can now imagine dividing the interval into smaller and smaller pieces. In general we can set up some terminology:</p>
+<blockquote>
+<p>A <strong>partition</strong> of the interval <span class="math inline">\([a, b]\)</span> is a subdivision of the interval into a number of subintervals, indicated by their endpoints: <span class="math display">\[a = x_0 &lt; x_1 &lt; x_2 &lt; \cdots &lt; x_N = b\]</span> This partition is said to have <strong>size</strong> <span class="math inline">\(N\)</span>.</p>
+<p>A standard way to form such a partition is to divide the interval into <span class="math inline">\(N\)</span> pieces of equal length. In that case each piece has a length: <span class="math display">\[\Delta x = \frac{b-a}{N}\]</span> And the actual values <span class="math inline">\(x_0\)</span>, <span class="math inline">\(x_1\)</span>, etc become: <span class="math display">\[x_0 = a,\quad x_1 = a +\Delta x,\quad x_2=a+2\Delta x,\quad cdots\]</span> So in general the <span class="math inline">\(i\)</span>-th point is: <span class="math display">\[x_i = a + i\Delta x\]</span></p>
+<p>Given such a partition, we can form three sums:</p>
+<ul>
+<li>The <strong>right-endpoint sum</strong>, <span class="math inline">\(R_N=\Delta x\left(x_1 + x_2 + x_3+\cdots+x_N\cdots\right)\)</span></li>
+<li>The <strong>left-endpoint sum</strong>, <span class="math inline">\(R_N=\Delta x\left(x_0 + x_1 + x_2+\cdots+x_{N-1}\cdots\right)\)</span></li>
+<li>The <strong>mid-point sum</strong>, where we use the midpoints on each interval.</li>
+<li>The <strong>lower sum</strong>, where we use smallest value of the function on each interval.</li>
+<li>The <strong>upper sum</strong>, where we use largest value of the function on each interval.</li>
+</ul>
+<p>NOTE: In our example above the left-endpoint sum is what we called the “upper sum”. That is because our function was decreasing, so the left endpoint on each interval is the maximum on that interval. And similarly for lower sum and right endpoints. In general this will not be the case.</p>
+</blockquote>
+<p><strong>Practice:</strong> Use the midpoint sum to estimate the previous area.</p>
+<h3 id="the-summation-notation">The Summation notation</h3>
+<p>To make it easier to write these long sums, a convenient notation has been created, which use a greek “sigma” to denote the act of adding, and a parameter to indicate the range. In general the notation looks like this: <span class="math display">\[\sum_{j=m}^n a_j= a_m + a_{m+1} + \cdots + a_n\]</span> As an example: <span class="math display">\[\sum_{j=3}^6 j^2= 3^2+4^2+5^2+6^2\]</span></p>
+<p>We can use this to write the left/right-endpoint sums from earlier in a more compact form: <span class="math display">\[R_N = \Delta x\sum_{j=1}^N f(a + j\Delta x)\]</span> <span class="math display">\[L_N = \Delta x\sum_{j=0}^{N-1} f(a + j\Delta x)\]</span> <span class="math display">\[M_N = \Delta x\sum_{j=0}^{N-1} f\left(a + j\Delta x +\frac{1}{2}\Delta x\right)\]</span></p>
+<p>There are some important properties of the summation notation, as well as some standard sums we can do:</p>
+<blockquote>
+<p><span class="math display">\[\sum_{j=m}^n(a_j + b_j) = \sum_{j=m}^n a_j + \sum_{j=m}^n b_j\]</span> <span class="math display">\[\sum_{j=m}^n(k\times a_j) = k\times\sum_{j=m}^n a_j\]</span> <span class="math display">\[\sum_{j=m}^n a_j = \sum_{i=0}^{n-m} a_{i+m}\qquad(i = j-m,\,j=i+m)\]</span> <span class="math display">\[\sum_{j=m}^n k = k\times(n-m+1)\]</span> <span class="math display">\[\sum_{j=1}^n j = \frac{N(N+1)}{2}\]</span> <span class="math display">\[\sum_{j=1}^n j^2 = \frac{N(N+1)(2N+1)}{6}\]</span> <span class="math display">\[\sum_{j=1}^n j^3 = \left(\frac{N(N+1)}{2}\right)^2\]</span></p>
+</blockquote>
+<p>We can use a combination of these to solve some interesting problems. For example let’s use these to find the area under <span class="math inline">\(f(x) = x^2\)</span> and from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>. We will use the righ-endpoint sum: <span class="math display">\[R_N = \Delta x\sum_{j=1}^N f(a + j\Delta x) = \Delta x\sum_{j=1}^N (a + j\Delta x)^2\]</span> We will worry about the sum first, then multiply by <span class="math inline">\(\Delta x\)</span> at the end. For the sum we have: <span class="math display">\[\sum_{j=1}^N (a + j\Delta x)^2 = \sum_{j=1}^N \left(a^2 + 2a\Delta x j + (\Delta x)^2 j^2\right) = \sum_{j=1}^N a^2 + 2a\Delta x\sum_{j=1}^N j + (\Delta x)^2\sum_{j=1}^N j^2\]</span> This then becomes: <span class="math display">\[a^2\times N + 2a\Delta x\times\frac{N(N+1)}{2} + \frac{N(N+1)(2N+1)}{6}\]</span> We now multiply the whole thing with <span class="math inline">\(\Delta x\)</span>, and replace all the <span class="math inline">\(\Delta x\)</span> with <span class="math inline">\(\Delta x = \frac{b-a}{N}\)</span>: <span class="math display">\[\frac{b-a}{N}\times a^2 N + 2a\frac{(b-a)^2}{N^2}\times\frac{N(N+1)}{2} + \frac{(b-a)^3}{N^3}\times\frac{N(N+1)(2N+1)}{6}\]</span> Now we want to imagine that we let the number of intervals, <span class="math inline">\(N\)</span>, go to infinity. In order to do that we will write the same factors as above in a more easy to process form: <span class="math display">\[(b-a)\times a^2 + 2a(b-a)^2\times\frac{N(N+1)}{2N^2} + (b-a)^3\times\frac{N(N+1)(2N+1)}{6N^3}\]</span> Each of the quotients is a quotient of polynomials of the same degree. As <span class="math inline">\(N\)</span> goes to infinity, these quotients approach the ratio of the leading coefficients. so we would get the answer: <span class="math display">\[(b-a)\times a^2 + 2a(b-a)^2\frac{1}{2} + (b-a)^3\frac{1}{3}\]</span> We make common denominators and simplify: <span class="math display">\[\frac{3(b-a) a^2 + 3a(b-a)^2 + (b-a)^3}{3} = \frac{b^3-a^3}{3}\]</span></p>
+</body>
+</html>

@@ -157,22 +157,20 @@ Day 3
 Day 1
   ~ [Antiderivatives](notes/antiderivatives.md)
 
-    Introduction to computing areas
-
     Homework 13 Due: 4.6 2, 4, 8, 20, 52
 
 Day 2
-  ~ The definite integral
+  ~ [Introduction to computing areas](notes/computing_areas.md)
 
 Day 3
-  ~ Fundamental theorem of Calculus
+  ~ The definite integral
 
     Homework 14 Due: 4.7 2, 16 4.8 14, 22, 50
 
 ## Week 13 (04/03-04/07)
 
 Day 1
-  ~ Fundamental theorem of Calculus (cont)
+  ~ Fundamental theorem of Calculus
 
 Day 2
   ~ The substitution method
