@@ -16,9 +16,7 @@
 In the previous section we estimated areas by considering a partition of an interval into subintervals, then estimating the area on each interval as a rectangle, using the leftmost endpoint or rightmost endpoint each time, or a couple of other variations. These are all variations of what is known as a *Riemann Sum*
 
 > Given a function $f$ on $[a, b]$ and a *partition* $P$ of $f$ consisting of $N$ intervals (and $N+1$ points): $a = x_0 < x_1 < \cdots < x_{N} = b$, we further pick a point $c_i$ on each interval $[x_{i-1}, x_i]. These are called *sample points*, and we denote the overall choice of one such point for each interval as $C$. We then define the **Riemann Sum** for the function for that partition and that choice of sample points as:
-
 > $$R(f, P, C) = \sum_{i=1}^N f(c_i)\Delta x_i$$
->
 > We define the **definite integral** of $f$ as the limit of these sums as the partitions have a smaller and smaller *norm*. The **norm** of a partition is defined as the largest interval length:
 > $$\|P\| = \max\{\Delta x_i\}$$
 > The integral is written as follows:
