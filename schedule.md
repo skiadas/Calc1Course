@@ -163,7 +163,7 @@ Day 2
   ~ [Introduction to computing areas](notes/computing_areas.md)
 
 Day 3
-  ~ The definite integral
+  ~ [The definite integral](notes/definite_integral.md)
 
     Homework 14 Due: 4.7 2, 16 4.8 14, 22, 50
 

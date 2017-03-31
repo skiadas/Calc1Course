@@ -73,8 +73,8 @@ We can now imagine dividing the interval into smaller and smaller pieces. In gen
 >
 > Given such a partition, we can form three sums:
 >
-> - The **right-endpoint sum**, $R_N=\Delta x\left(x_1 + x_2 + x_3+\cdots+x_N\cdots\right)$
-> - The **left-endpoint sum**, $R_N=\Delta x\left(x_0 + x_1 + x_2+\cdots+x_{N-1}\cdots\right)$
+> - The **right-endpoint sum**, $R_N=\Delta x\left(f(x_1) + f(x_2) + f(x_3)+\cdots+f(x_N)\right)$
+> - The **left-endpoint sum**, $R_N=\Delta x\left(f(x_0) + f(x_1) + f(x_2)+\cdots+f(x_{N-1})\right)$
 > - The **mid-point sum**, where we use the midpoints on each interval.
 > - The **lower sum**, where we use smallest value of the function on each interval.
 > - The **upper sum**, where we use largest value of the function on each interval.

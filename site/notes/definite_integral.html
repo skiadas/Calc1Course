@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<p>*# The Definite Integral</p>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 5.2</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 5.2: 3, 5, 7, 13, 15, 17, 37, 41, 45, 55, 57</li>
+<li>To turn in: 5.2 4, 14, 18, 40</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="the-definite-integral">The definite integral</h3>
+<p>In the previous section we estimated areas by considering a partition of an interval into subintervals, then estimating the area on each interval as a rectangle, using the leftmost endpoint or rightmost endpoint each time, or a couple of other variations. These are all variations of what is known as a <em>Riemann Sum</em></p>
+<blockquote>
+<p>Given a function <span class="math inline">\(f\)</span> on <span class="math inline">\([a, b]\)</span> and a <em>partition</em> <span class="math inline">\(P\)</span> of <span class="math inline">\(f\)</span> consisting of <span class="math inline">\(N\)</span> intervals (and <span class="math inline">\(N+1\)</span> points): <span class="math inline">\(a = x_0 &lt; x_1 &lt; \cdots &lt; x_{N} = b\)</span>, we further pick a point <span class="math inline">\(c_i\)</span> on each interval $[x_{i-1}, x_i]. These are called <em>sample points</em>, and we denote the overall choice of one such point for each interval as <span class="math inline">\(C\)</span>. We then define the <strong>Riemann Sum</strong> for the function for that partition and that choice of sample points as:</p>
+</blockquote>
+<blockquote>
+<p><span class="math display">\[R(f, P, C) = \sum_{i=1}^N f(c_i)\Delta x_i\]</span></p>
+<p>We define the <strong>definite integral</strong> of <span class="math inline">\(f\)</span> as the limit of these sums as the partitions have a smaller and smaller <em>norm</em>. The <strong>norm</strong> of a partition is defined as the largest interval length: <span class="math display">\[\|P\| = \max\{\Delta x_i\}\]</span> The integral is written as follows: <span class="math display">\[\int_a^b f(x) dx = \lim_{\|P\|\to 0} R(f, P, C) = \lim_{\|P\|\to 0}\sum_{i=1}^N f(c_i)\Delta x_i\]</span> If the integral exists, we say the function is <strong>integrable</strong>.</p>
+<p>Geometrically, we can think of the definite integral as the <em>signed area</em> between the function and the <span class="math inline">\(x\)</span>-axis.</p>
+</blockquote>
+<p>Directly computing the above limit is not very practical, and we will find ways around it shortly. For now, we can use the following theorem that guarantees for us that these integrals exist for many functions: &gt; If <span class="math inline">\(f(x)\)</span> is continuous on <span class="math inline">\([a, b]\)</span>, or continuous except for maybe finitely many points, then <span class="math inline">\(f\)</span> is integrable over <span class="math inline">\([a, b]\)</span>.</p>
+<h3 id="properties-of-the-definite-integral">Properties of the definite integral</h3>
+<p>The definite integrals enjoys some key properties that allow us to compute it in many concrete situations. Most of these properties follow from considering the corresponding Riemann sums.</p>
+<blockquote>
+<p>Integral of constant</p>
+<p>If <span class="math inline">\(f(x)=k\)</span> is a constant function, then: <span class="math display">\[\int_a^b k dx = k (b-a)\]</span></p>
+</blockquote>
+<blockquote>
+<p>Linearity of integral</p>
+<p>If <span class="math inline">\(f\)</span>, <span class="math inline">\(g\)</span> are integrable functions, then <span class="math inline">\(f+g\)</span> and <span class="math inline">\(kf(x)\)</span> are also integrable and: <span class="math display">\[\int_a^b f(x) + g(x)dx = \int_a^b f(x)dx + \int_a^b g(x)dx\]</span> <span class="math display">\[\int_a^b k f(x)dx = k\int_a^b f(x)dx\]</span></p>
+</blockquote>
+<p><strong>Practice problem 1</strong>: Armed with these properties, along with the identities <span class="math inline">\(\int_0^b xdx = \frac{b^2}{2}\)</span> and <span class="math inline">\(\in_0^b x^2dx = \frac{b^3}{3}\)</span>, compute the integral <span class="math inline">\(\int_0^5 \left(2x^2-3x+1\right)\)</span></p>
+<p>Another set of properties has to do with changing the endpoints of integration:</p>
+<blockquote>
+<p>When the endpoints <span class="math inline">\(a = b\)</span> match, we define: <span class="math display">\[\int_a^a f(x)dx = 0\]</span> For <span class="math inline">\(a&lt; b\)</span>, we define: <span class="math display">\[\int_b^a f(x)dx = -\int_a^b f(x)dx\]</span></p>
+<p>For any three numbers <span class="math inline">\(a, b, c\)</span> we have: <span class="math display">\[\int_a^c f(x)dx = \int_a^bf(x)dx + \int_b^c f(x)dx\]</span> or alternatively written: <span class="math display">\[\int_b^c f(x)dx = \int_a^cf(x)dx - \int_a^b f(x)dx\]</span></p>
+</blockquote>
+<p><strong>Practice problem 2</strong>: Using these properties, compute <span class="math inline">\(\int_a^b x^2 dx\)</span>.</p>
+<p>Finally we have two theorems that have to do with a comparison of function:</p>
+<blockquote>
+<p>Comparison</p>
+<p>If <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are integral functions, <span class="math inline">\(a &lt; b\)</span> and <span class="math inline">\(g(x) \leq f(x)\)</span> for all <span class="math inline">\(x\in[a, b]\)</span>, then the integrals have the same relationship:</p>
+</blockquote>
+<blockquote>
+<p><span class="math display">\[\int_a^b f(x)dx \leq \int_a^b g(x)dx\]</span></p>
+</blockquote>
+<p>An important consequence of this is the following:</p>
+<blockquote>
+<p>If <span class="math inline">\(m\)</span> and <span class="math inline">\(M\)</span> are such that <span class="math inline">\(m\leq f(x) \leq M\)</span> for all <span class="math inline">\(x\in[a, b]\)</span>, then: <span class="math display">\[m(b-a)\leq \int_a^b f(x)dx\leq M(b-a)\]</span></p>
+</blockquote>
+</body>
+</html>
