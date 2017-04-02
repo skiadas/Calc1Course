@@ -170,21 +170,23 @@ Day 3
 ## Week 13 (04/03-04/07)
 
 Day 1
-  ~ Fundamental theorem of Calculus
+  ~ [The definite integral (cont)](notes/definite_integral.md)
 
 Day 2
-  ~ The substitution method
+  ~ Fundamental Theorem of Calculus
 
 Day 3
-  ~ Area between curves
+  ~ The substitution method
+
+    Homework 15 Due: 5.2 4, 14, 18, 40
 
 ## Week 14 (04/10-04/14)
 
 Day 1
-  ~ Area between curves (cont)
+  ~ Area between curves
 
 Day 2
-  ~ TBD
+  ~ Area between curves (cont)
 
 Day 3
   ~ TBD
