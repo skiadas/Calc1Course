@@ -32,21 +32,23 @@ Directly computing the above limit is not very practical, and we will find ways 
 
 The definite integrals enjoys some key properties that allow us to compute it in many concrete situations. Most of these properties follow from considering the corresponding Riemann sums.
 
-> Integral of constant
+> **Integral of constant**
 >
 > If $f(x)=k$ is a constant function, then:
 > $$\int_a^b k dx = k (b-a)$$
 
-> Linearity of integral
+> **Linearity of integral**
 >
 > If $f$, $g$ are integrable functions, then $f+g$ and $kf(x)$ are also integrable and:
 > $$\int_a^b f(x) + g(x)dx = \int_a^b f(x)dx + \int_a^b g(x)dx$$
 > $$\int_a^b k f(x)dx = k\int_a^b f(x)dx$$
 
-**Practice problem 1**: Armed with these properties, along with the identities $\int_0^b xdx = \frac{b^2}{2}$ and $\in_0^b x^2dx = \frac{b^3}{3}$, compute the integral $\int_0^5 \left(2x^2-3x+1\right)$
+**Practice problem 1**: Armed with these properties, along with the identities $\int_0^b xdx = \frac{b^2}{2}$ and $\int_0^b x^2dx = \frac{b^3}{3}$, compute the integral $\int_0^5 \left(2x^2-3x+1\right)$
 
 Another set of properties has to do with changing the endpoints of integration:
 
+> **Changes in Endpoints**
+>
 > When the endpoints $a = b$ match, we define:
 > $$\int_a^a f(x)dx = 0$$
 > For $a< b$, we define:
@@ -61,13 +63,14 @@ Another set of properties has to do with changing the endpoints of integration:
 
 Finally we have two theorems that have to do with a comparison of function:
 
-> Comparison
+> **Comparison**
 >
 > If $f$ and $g$ are integral functions, $a < b$ and $g(x) \leq f(x)$ for all $x\in[a, b]$, then the integrals have the same relationship:
-
 > $$\int_a^b f(x)dx \leq \int_a^b g(x)dx$$
 
 An important consequence of this is the following:
 
+> **Integral bounds**
+>
 > If $m$ and $M$ are such that $m\leq f(x) \leq M$ for all $x\in[a, b]$, then:
 > $$m(b-a)\leq \int_a^b f(x)dx\leq M(b-a)$$
