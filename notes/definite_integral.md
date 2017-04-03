@@ -65,7 +65,7 @@ Finally we have two theorems that have to do with a comparison of function:
 
 > **Comparison**
 >
-> If $f$ and $g$ are integral functions, $a < b$ and $g(x) \leq f(x)$ for all $x\in[a, b]$, then the integrals have the same relationship:
+> If $f$ and $g$ are integrable functions, $a < b$ and $g(x) \leq f(x)$ for all $x\in[a, b]$, then the integrals have the same relationship:
 > $$\int_a^b f(x)dx \leq \int_a^b g(x)dx$$
 
 An important consequence of this is the following:
