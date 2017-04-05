@@ -173,7 +173,7 @@ Day 1
   ~ [The definite integral (cont)](notes/definite_integral.md)
 
 Day 2
-  ~ Fundamental Theorem of Calculus
+  ~ [Fundamental Theorem of Calculus](notes/fundamental_theorem_calculus.md)
 
 Day 3
   ~ The substitution method

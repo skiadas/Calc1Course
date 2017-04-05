@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="the-fundamental-theorem-of-calculus">The Fundamental Theorem of Calculus</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Sections 5.3, 5.4</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 5.3: 5, 7, 9, 15, 35, 41, 45</li>
+<li>To turn in: 5.3 10, 20, 38, 46</li>
+<li>Section 5.4: TODO</li>
+<li>To turn in: 5.4 TODO</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="the-fundamental-theorem-of-calculus-part-i">The Fundamental Theorem of Calculus, Part I</h3>
+<p>The Fundamental Theorem of Calculus (FTC) is one of the cornerstones of the course. It is a deep theorem that relates the processes of integration and differentiation, and shows that they are in a certain sense inverse processes.</p>
+<p>The FTC has two parts. We will first discuss the first form of the theorem:</p>
+<blockquote>
+<p><strong>Fundamental Theorem of Calculus, Part I</strong></p>
+<p>If <span class="math inline">\(F(x)\)</span> is an antiderivative of <span class="math inline">\(f(x)\)</span> on <span class="math inline">\([a, b]\)</span>, i.e. <span class="math inline">\(F&#39;(x) = f(x)\)</span> on <span class="math inline">\([a, b]\)</span>, then we have: <span class="math display">\[\int_a^bf(x)dx = F(b) - F(a)\]</span></p>
+<p>In essence, we can directly compute an integral if we know of an antiderivative for the integrand.</p>
+<p>Shorthand notation: The difference <span class="math inline">\(F(b)-F(a)\)</span> is often written as: <span class="math display">\[\bigl.F(x)\bigr|_a^b\]</span></p>
+</blockquote>
+<p>Examples:</p>
+<p><span class="math display">\[\int_1^4 x^2dx = \left.\frac{x^3}{3}\right|_1^4 = \frac{4^3}{3}-\frac{1^3}{3} = \frac{63}{3} = 21\]</span> <span class="math display">\[\int_0^\pi \cos xdx = \bigl.\sin x\bigr|_0^\pi = \sin\pi - \sin 0 = 0\]</span></p>
+<p>Make sure to understand that second integral graphically, and why it should indeed equal <span class="math inline">\(0\)</span>.</p>
+<h4 id="proof-of-the-fundamental-theorem-of-calculus-part-i">Proof of the Fundamental Theorem of Calculus, Part I</h4>
+<p>The idea of the theorem is to relate the difference <span class="math inline">\(F(b) - F(a)\)</span> to the Riemann sums.</p>
+<p>We start with a partition <span class="math inline">\(P\)</span> of the interval <span class="math inline">\([a, b]\)</span>: <span class="math display">\[\left\{ a = x_0 &lt; x_1 &lt; x_2 &lt; x_3 &lt; \cdots &lt; x_N = b \right\}\]</span> On each interval, we want to estimate the difference in the endpoints, <span class="math inline">\(F(x_i) - F(x_{i-1})\)</span>. To do that, we use the mean value theorem, which says that this difference should equal <span class="math inline">\(F&#39;(c_i)(x_i-x_{i-1})\)</span> for some point <span class="math inline">\(c_i\in[x_{i-1}, x_i]\)</span>L <span class="math display">\[F(x_i) - F(x_{i-1}) = F&#39;(c_i)(x_i-x_{i-1})\]</span> Since <span class="math inline">\(F&#39;=f\)</span>, we have: <span class="math display">\[F(x_i) - F(x_{i-1}) = f(c_i)\Delta x_i\]</span> If we write this for every <span class="math inline">\(i\)</span>, then add up all the equations, the left-hand-side has many terms cancelling out: <span class="math display">\[\left[F(x_1)-F(x_0)\right] + \left[F(x_2)-F(x_1)\right] + \left[F(x_3)-F(x_2)\right] + \cdots + \left[F(x_N)-F(x_{N-1})\right]\]</span> Note that every term except for <span class="math inline">\(F(x_0)=F(a)\)</span> and <span class="math inline">\(F(x_N)=F(b)\)</span> appears twice, once with a plus sign and once with a minus sign. So they all cancel out. We end up with the formula: <span class="math display">\[F(b) - F(a) = \sum_{i=1}^N f(c_i)\Delta x_i\]</span> The right-hand-side is exactly a Riemann sum with those specific sample points. In other words:</p>
+<blockquote>
+<p>For every partition <span class="math inline">\(P\)</span> there is a choice <span class="math inline">\(C\)</span> of sample points such that: <span class="math display">\[R(f, P, C) = \sum_{i=1}^N f(c_i)\Delta x_i = F(b) - F(a)\]</span></p>
+</blockquote>
+<p>Since this happens for every partition, and since the right-hand-side is a constant independent of the partition, it follows that the limit should have the same relation, so: <span class="math display">\[\int_a^b f(x)dx = F(b) - F(a)\]</span> as desired.</p>
+<h3 id="the-fundamental-theorem-of-calculus-part-ii">The Fundamental Theorem of Calculus, Part II</h3>
+<p>TODO</p>
+</body>
+</html>
