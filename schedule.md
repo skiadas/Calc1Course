@@ -176,17 +176,21 @@ Day 2
   ~ [Fundamental Theorem of Calculus](notes/fundamental_theorem_calculus.md)
 
 Day 3
-  ~ The substitution method
+  ~ [Fundamental Theorem of Calculus, part 2](notes/fundamental_theorem_calculus.md)
 
     Homework 15 Due: 5.2 4, 14, 18, 40
 
 ## Week 14 (04/10-04/14)
 
 Day 1
-  ~ Area between curves
+  ~ The substitution method
+
+    Homework 16 Due: 5.3 10, 20, 38, 46
 
 Day 2
-  ~ Area between curves (cont)
+  ~ Area between curves
+
+    Homework 17 Due: 5.4 24, 28, 34, 36
 
 Day 3
   ~ TBD

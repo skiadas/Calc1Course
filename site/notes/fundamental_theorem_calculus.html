@@ -22,8 +22,9 @@
 <ul>
 <li>Section 5.3: 5, 7, 9, 15, 35, 41, 45</li>
 <li>To turn in: 5.3 10, 20, 38, 46</li>
-<li>Section 5.4: TODO</li>
-<li>To turn in: 5.4 TODO</li>
+<li>Section 5.4: 17, 21, 29, 37, 39</li>
+<li>In class: 5.4 17, 33, 35, 44, 45</li>
+<li>To turn in: 5.4 24, 28, 34, 36</li>
 </ul>
 <h2 id="notes">Notes</h2>
 <h3 id="the-fundamental-theorem-of-calculus-part-i">The Fundamental Theorem of Calculus, Part I</h3>
@@ -46,6 +47,29 @@
 </blockquote>
 <p>Since this happens for every partition, and since the right-hand-side is a constant independent of the partition, it follows that the limit should have the same relation, so: <span class="math display">\[\int_a^b f(x)dx = F(b) - F(a)\]</span> as desired.</p>
 <h3 id="the-fundamental-theorem-of-calculus-part-ii">The Fundamental Theorem of Calculus, Part II</h3>
-<p>TODO</p>
+<p>The Fundamental Theorem of Calculus has a second formulation, that is in a way the “other direction” than that described in the first part. In that part we started with a function <span class="math inline">\(F(x)\)</span>, looked at its derivative <span class="math inline">\(f(x) = F&#39;(x)\)</span>, then took an integral of that, and landed back to <span class="math inline">\(F\)</span>. This version goes the other way.</p>
+<blockquote>
+<p><strong>Fundamental Theorem of Calculus, Part II</strong></p>
+<p>Let <span class="math inline">\(f(t)\)</span> be a continuous function on <span class="math inline">\([a, b]\)</span>. Then for each <span class="math inline">\(x\in[a,b]\)</span> we can define: <span class="math display">\[G(x) = \int_a^xf(t)dt\]</span> This defines a function <span class="math inline">\(G\)</span> on <span class="math inline">\([a, b]\)</span>. The theorem is that this function is <em>differentiable</em>, and its derivative is: <span class="math display">\[G&#39;(x) = f(x)\]</span> So in a single formula we would write: <span class="math display">\[\frac{d}{dx}\left(\int_a^x f(t)dt\right) = f(x)\]</span></p>
+</blockquote>
+<p>As an example, consider the function: <span class="math display">\[g(x) = \int_1^x \frac{1}{t}dt\]</span> Here’s some things we can say about it:</p>
+<ul>
+<li><span class="math inline">\(g(x)\)</span> is defined for all <span class="math inline">\(x&gt;0\)</span>.</li>
+<li><span class="math inline">\(g(1) = \int_1^1\frac{1}{t}dt = 0\)</span>.</li>
+<li><span class="math inline">\(g(x)\)</span> is differentiable, with derivative <span class="math inline">\(g&#39;(x) = \frac{1}{x}\)</span>.</li>
+<li>As its derivative is always positive for <span class="math inline">\(x&gt;0\)</span>, <span class="math inline">\(g\)</span> is an increasing function.</li>
+<li><span class="math inline">\(g&#39;&#39;(x) = \left(\frac{1}{x}\right)&#39; = -\frac{1}{x^2}\)</span>.</li>
+<li>Since the second derivative is always negative for <span class="math inline">\(x&gt;0\)</span>, <span class="math inline">\(g\)</span> is a concave down function.</li>
+<li>Since for <span class="math inline">\(t\geq 1\)</span> we have <span class="math inline">\(\frac{1}{t}\leq 1\)</span>, we can also say that for <span class="math inline">\(t\geq 1\)</span> we would have: <span class="math display">\[g(x) = \int_1^x\frac{1}{t}dt\leq \int_1^x 1dt = x-1\]</span></li>
+</ul>
+<p>All this information can give us a good handle on the function, and we can for instance do a decent job graphing the function.</p>
+<p>Let us look at some variations of the theorem, where the endpoints are more complicated. Suppose we have the following integral function: <span class="math display">\[h(x)=\int_1^{x^2}\frac{1}{t}dt\]</span> We have no theorem that deals with this function directly. Instead we will think of the function: <span class="math display">\[g(u) = \int_1^u \frac{1}{t}dt\]</span> For that function we know that <span class="math inline">\(g&#39;(u) = \frac{1}{u}\)</span>.</p>
+<p>Now <span class="math inline">\(g\)</span> and <span class="math inline">\(h\)</span> are related: <span class="math display">\[h(x) = g(x^2)\]</span> Therefore we can use the chain rule to find the derivative of <span class="math inline">\(h\)</span>. We would have: <span class="math display">\[h&#39;(x) = g&#39;(x^2)(2x) = \frac{1}{x^2}(2x) = \frac{2}{x}\]</span> So “compute the integrand function at the upper endpoint, then multiply by the derivative of the upper endpoint”.</p>
+<p>Similarly we can work with cases where the lower endpoint has <span class="math inline">\(x\)</span> in it: <span class="math display">\[h_2(x) = \int_x^1\frac{1}{t}dt\]</span> We can then write the integral as: <span class="math display">\[h_2(x) = -\int_1^x\frac{1}{t}dt\]</span> so the derivative would be: <span class="math display">\[h_2&#39;(x) = -\frac{1}{x}\]</span></p>
+<p>If we have both endpoints containing <span class="math inline">\(x\)</span>, we can break the problem up in two: <span class="math display">\[h_3(x) = \int_{x^2}^{x^3}\frac{1}{t}dt = \int_1^{x^3}\frac{1}{t}dt - \int_1^{x^2}\frac{1}{t}dt\]</span> The derivative would then be, as before: <span class="math display">\[h_3&#39;(x) = \frac{1}{x^3}(3x^2) - \frac{1}{x^2}(2x) = \frac{3}{x} - \frac{2}{x} = \frac{1}{x}\]</span> This is rather interesting, the derivative of this function turned out to be the same as the derivative of our original <span class="math inline">\(\int_1^x \frac{1}{t}dt\)</span>. This won’t happen in general of course, but it does happen for this particular integrand.</p>
+<p><strong>Practice</strong>: Compute the derivatives of <span class="math inline">\(\int_0^{x^2}\sin(t^2)dt\)</span> and <span class="math inline">\(\int_x^{2x}\frac{\sin t}{t}dt\)</span>.</p>
+<h4 id="proof-of-the-fundamental-theorem-of-calculus-part-ii">Proof of the Fundamental Theorem of Calculus, Part II</h4>
+<p>We start with the function <span class="math inline">\(f(t)\)</span> and its integral function <span class="math inline">\(G(x) = \int_a^x f(t) dt\)</span>. In order to determine if <span class="math inline">\(G(x)\)</span> is differentiable at a point <span class="math inline">\(x\)</span>, we need to consider the expression: <span class="math display">\[\lim_{h\to 0}\frac{G(x+h) - G(x)}{h}\]</span> Throughout the rest of this section, we will treat this point <span class="math inline">\(x\)</span> as a constant.</p>
+<p>In order to compute this limit, we start by considering the difference: <span class="math display">\[G(x+h) - G(x) = \int_a^{x+h}f(t)dt - \int_a^x f(t)dt = \int_x^{x+h}f(t)dt\]</span> We therefore need to get a hold on this integral <span class="math inline">\(\int_x^{x+h}f(t)dt\)</span>. In order to do that, we will make a simpifying assumption that <span class="math inline">\(f\)</span> is an increasing function on the interval from <span class="math inline">\(x\)</span> to <span class="math inline">\(x+h\)</span>. With that in mind, we can say that for every <span class="math inline">\(t\in[x, x+h]\)</span> we have the inequalities: <span class="math display">\[f(x)\leq f(t)\leq f(x+h)\]</span> These inequalities are presented when we integrate: <span class="math display">\[\int_x^{x+h}f(x)dt\leq \int_x^{x+h}f(t)dt\leq \int_x^{x+h}f(x+h)dt\]</span> The first and third integral are the integrals of constants, as our variable is <span class="math inline">\(t\)</span>. Therefore they become (since <span class="math inline">\((x+h)-x=h\)</span>: <span class="math display">\[hf(x) \leq \int_x^{x+h}f(t)dt \leq f(x+h)\]</span> And dividing by <span class="math inline">\(h\)</span> we get: <span class="math display">\[f(x) \leq \frac{\int_x^{x+h}f(t)dt}{h} \leq f(x+h)\]</span> Going back to <span class="math inline">\(G\)</span>, we have: <span class="math display">\[f(x) \leq \frac{G(x+h) - G(x)}{h} \leq f(x+h)\]</span> We next need to take the limit as <span class="math inline">\(h\to 0\)</span>. Since <span class="math inline">\(f\)</span> is a continuous function, then: <span class="math display">\[\lim_{h\to 0}f(x+h) = f(x)\]</span> So by the squeeze theorem we get that: <span class="math display">\[\lim_{h\to 0}\frac{G(x+h) - G(x)}{h} = f(x)\]</span> This proves that <span class="math inline">\(G(x)\)</span> is differentiable and its derivative if <span class="math inline">\(G&#39;(x) = f(x)\)</span>.</p>
 </body>
 </html>
