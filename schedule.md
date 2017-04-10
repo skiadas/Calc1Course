@@ -194,3 +194,5 @@ Day 2
 
 Day 3
   ~ Review ([final study guide](notes/midterm3_study_guide.md))
+
+    Homework 18 due: 5.6 14, 16, 38, 60, 72
