@@ -183,7 +183,7 @@ Day 3
 ## Week 14 (04/10-04/14)
 
 Day 1
-  ~ The substitution method
+  ~ [The substitution method](notes/substitution.md)
 
     Homework 16 Due: 5.3 10, 20, 38, 46
 
@@ -193,4 +193,4 @@ Day 2
     Homework 17 Due: 5.4 24, 28, 34, 36
 
 Day 3
-  ~ TBD
+  ~ Review ([final study guide](notes/midterm3_study_guide.md))

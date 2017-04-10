@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="the-substitution-method">The Substitution Method</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 5.6</li>
+</ul>
+<h2 id="practice-problems">Practice problems</h2>
+<ul>
+<li>Section 5.6: 7, 9, 13, 15, 19, 37, 41, 55, 69, 71</li>
+<li>To turn in: 5.6 14, 16, 38, 60, 72</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<h3 id="the-substitution-method-1">The Substitution Method</h3>
+<p>The substitution method is a powerful tool in our efforts to compute integrals and antiderivatives. It is essentially the inverse to the chain rule.</p>
+<h4 id="indefinite-integrals">Indefinite Integrals</h4>
+<blockquote>
+<p><strong>Substitution Method: Indefinite Integrals</strong></p>
+<p>If <span class="math inline">\(F&#39;(x)=f(x)\)</span>, i.e. if <span class="math inline">\(F\)</span> is an antiderivative for <span class="math inline">\(f\)</span>, then: <span class="math display">\[\int f(u(x))u&#39;(x)dx = F(u(x)) + C\]</span> Note that the RHS can also be thought of as <span class="math inline">\(\int f(u)du\)</span> with an understanding the at the end we would substitute <span class="math inline">\(u=u(x)\)</span>. With that in mind, the substitution method is also written: <span class="math display">\[\int f(u(x))u&#39;(x)dx = \int f(u)du\]</span></p>
+</blockquote>
+<p>This follows from direct observation: The derivative of <span class="math inline">\(F(u(x))\)</span> would equal <span class="math inline">\(F&#39;(u(x))u&#39;(x) = f(u(x))u&#39;(x)\)</span>.</p>
+<p>Example: Suppose we had to compute <span class="math inline">\(\int x\sin(x^2)dx\)</span>. We can then consider <span class="math inline">\(u(x) = x^2\)</span>, and we would have: <span class="math display">\[\int x\sin(x^2)dx = \frac{1}{2}\int \sin(x^2)(2x)dx = \frac{1}{2}\int\sin u du = -\frac{1}{2}\cos u = -\frac{1}{2}\cos(x^2) + C\]</span></p>
+<p>In general to carry out the substitution:</p>
+<ol style="list-style-type: decimal">
+<li>Identify a <span class="math inline">\(u=u(x)\)</span> transformation.</li>
+<li>Replace <span class="math inline">\(u&#39;(x)dx\)</span> with <span class="math inline">\(du\)</span>.</li>
+<li>Replace all other occurences of <span class="math inline">\(x\)</span> via a suitable form with <span class="math inline">\(u\)</span>. If that is not possible then a <span class="math inline">\(u\)</span>-substitution is not possible.</li>
+<li>Compute the resulting indefinite integral.</li>
+<li>Substitute back for <span class="math inline">\(x\)</span>.</li>
+</ol>
+<p>As another example, consider the following: <span class="math display">\[\int \frac{x^3}{(1+x^2)^3}dx\]</span> Here the denominator is problematic, and so it is a good candidate for a substitution: <span class="math display">\[u = 1+x^2\]</span> We then need to compute: <span class="math display">\[du = (1+x^2)&#39;dx = 2xdx\]</span> This leaves an <span class="math inline">\(x^2\)</span> in the numerator, and we need to replace it with a suitable expression of <span class="math inline">\(u\)</span>: <span class="math display">\[x^2 = u-1\]</span> Finally, our integral becomes: <span class="math display">\[\int \frac{u-1}{u^3}\frac{du}{2}\]</span> We can then compute this integral by braking it up in two pieces: <span class="math display">\[\int \frac{u-1}{u^3}\frac{du}{2} = \frac{1}{2}\int \frac{u}{u^3}du - \frac{1}{2}\int \frac{1}{u^3}du = \frac{1}{2}\int \frac{1}{u^2}du - \frac{1}{2}\int \frac{1}{u^3}du = - \frac{1}{2u} + \frac{1}{4u^2} = \frac{-2u + 1}{4u^2} + C\]</span> Finally, we put back in <span class="math inline">\(u=1+x^2\)</span>: <span class="math display">\[\int \frac{x^3}{(1+x^2)^3}dx = \frac{-2(1+x^2) + 1}{4(1+x^2)^2}\]</span></p>
+<h4 id="definite-integrals">Definite Integrals</h4>
+<p>There if a version of the substitution method for definite integrals. The main difference is that the <em>endpoints change</em>:</p>
+<blockquote>
+<p><strong>Substitution Method: Definite Integrals</strong></p>
+<p><span class="math display">\[\int_a^b f(u(x))u&#39;(x)dx = \int_{u(a)}^{u(b)}f(u)du\]</span></p>
+</blockquote>
+<p>In other words:</p>
+<ol style="list-style-type: decimal">
+<li>Identify <span class="math inline">\(u=u(x)\)</span></li>
+<li>Replace <span class="math inline">\(u&#39;(x)dx\)</span> with <span class="math inline">\(du\)</span>.</li>
+<li>Replace all other occurences of <span class="math inline">\(x\)</span> via a suitable form with <span class="math inline">\(u\)</span>. If that is not possible then a <span class="math inline">\(u\)</span>-substitution is not possible.</li>
+<li>Change the endpoints from <span class="math inline">\(x\)</span> values to corresponding <span class="math inline">\(u\)</span> values.</li>
+<li>Compute the resulting definite integral</li>
+</ol>
+<p>As an example, let us compute the integral: <span class="math display">\[\int_0^{\frac{\pi}{2}}\cos x\sin xdx\]</span> We can do here a substitution <span class="math inline">\(u=\sin x\)</span>. Then <span class="math inline">\(du=\cos x dx\)</span>. The endpoints will change: When <span class="math inline">\(x=0\)</span> we have <span class="math inline">\(u=\sin 0 = 0\)</span> and when <span class="math inline">\(x=\frac{pi}{2}\)</span> we have <span class="math inline">\(u=\sin \frac{pi}{2} = 1\)</span>. So we get the integral: <span class="math display">\[\int_0^{\frac{\pi}{2}}\cos x\sin xdx = \int_0^1 udu = \left.\frac{u^2}{2}\right|_0^1 = \frac{1}{2}\]</span></p>
+</body>
+</html>
