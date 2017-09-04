@@ -22,6 +22,8 @@
     - Conclusion: The product of two even numbers is a difference of squares
 - Multiplicative inverses
 - Division is multiplication by the inverse
+    - $\frac{a}{b} = a\cdot{1}{b}$
+    - $\frac{c}{b/a} = \frac{ac}{b}$
 - Solving a linear equation such as $5x+3 = 6x - 1$
 - Find the error in proof that $0 = 1$
 - Solving an equation such as $(x-2)(x+1)(x-3)=0$
