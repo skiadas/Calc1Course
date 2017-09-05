@@ -42,6 +42,8 @@
     - Every number is either positive, zero, or negative
 - Inequalities and addition
 - Inequalities and multiplication (when does the direction reverse?)
+- Inequalities comparing 0 to a product, like $(x-2)(x+3) > 0$.
+    - What if we had three or four factors?
 - Absolute value
 - Triangle inequality
 - Various interpretations of the inequality $|x-a| < r$
