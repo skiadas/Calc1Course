@@ -95,7 +95,7 @@ There will be two midterms, on Wednesday, October 4th and Friday, November 10th,
 
 ### Getting Help
 
-- The learning center has set up study groups for the class. USE THEM! The sessions are led by Emily Riley, one of our most experienced majors, at the following times in the Withrow conference room 208:
+- The learning center has set up study groups for the class. USE THEM! The sessions are led by Emily Riley, one of our most experienced majors, at the following times in the Withrow conference room:
     - Tuesdays 7-8 pm
     - Thursdays 8-9 pm
 - You should never hesitate to ask me questions. I will never think any less of anyone for asking a question. Stop by my office hours or just email me your question, which has the great benefit of forcing you to write it down in clear terms, which often helps you understand it better.

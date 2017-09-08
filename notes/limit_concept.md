@@ -19,6 +19,7 @@
 - If we want to find out how fast the person is going at one specific time, their *instantaneous velocity*, that's harder.
 - Think of the value you see in the speedometer of a car. How is it computed?
 - Idea: Measure very small time intervals. In fact, make them smaller and smaller.
+- Practice: 2.1 1
 
 ### Tangent lines
 
@@ -42,6 +43,7 @@
     > In other words, the values of $f(x)$ must get arbitrarily close to $L$ when $x$ is sufficiently close but not equal to $a$.
 - Simple examples: $\displaystyle\lim_{x\to a} k = k$, $\displaystyle\lim_{x\to a} x = a$
 - More complex example: $\displaystyle\lim_{x\to 1} 2x+1 = 3$.
+- Practice: 2.2 21
 
 ### Infinite and one-sided limits
 
