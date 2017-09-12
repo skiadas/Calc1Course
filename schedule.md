@@ -21,7 +21,7 @@ Day 1
 Day 2
   ~ [Continuity](notes/continuity.md)
 
-    HW Due: 2.1 6, 8, 2.2 2, 22
+    Homework Due: 2.1 6, 8, 2.2 2, 22
 
 Day 3
   ~ [Evaluating Limits](notes/limit_evaluation.md)
