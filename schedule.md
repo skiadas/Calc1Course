@@ -21,6 +21,8 @@ Day 1
 Day 2
   ~ [Continuity](notes/continuity.md)
 
+    HW Due: 2.1 6, 8, 2.2 2, 22
+
 Day 3
   ~ [Evaluating Limits](notes/limit_evaluation.md)
 
@@ -28,6 +30,8 @@ Day 3
 
 Day 1
   ~ [Trigonometric Limits](notes/limit_trig.md)
+
+    Homework Due: 2.3 12, 14, 2.4 4, 12, 52
 
 Day 2
   ~ [Limits at Infinity](notes/limit_infinity.md)
