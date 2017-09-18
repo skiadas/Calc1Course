@@ -49,7 +49,7 @@ $$0\leq |1-\cos t|\leq\sqrt{(1-\cos t)^2 + \sin^2 t}\leq |t|$$
 $$0\leq |\sin t|\leq\sqrt{(1-\cos t)^2 + \sin^2 t}\leq |t|$$
 The squeeze theorem now gives us the desired results, along with the following important observation:
 
-> $\lim_{x\to a}f(x) = 0$ if and only if $\lim_{x\to a}|f(x)| = 0$.
+> $$\lim_{x\to a}f(x) = 0\textrm{ if and only if }\lim_{x\to a}|f(x)| = 0$$
 
 We now show in general that the sine and cosine functions are continuous, namely:
 
