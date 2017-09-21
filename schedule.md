@@ -34,32 +34,34 @@ Day 1
     Homework Due: 2.3 12, 14, 2.4 4, 12, 52
 
 Day 2
-  ~ [Limits at Infinity](notes/limit_infinity.md)
+  ~ [Trigonometric Limits](notes/limit_trig.md)
 
 Day 3
-  ~ [Intermediate Value Theorem](notes/ivt.md)
+  ~ [Limits at Infinity](notes/limit_infinity.md)
+
+    [Intermediate Value Theorem](notes/ivt.md)
 
     Homework Due: 2.5 16, 30, 2.6 10, 24, 40
 
 ## Week  4 (09/25-09/29)
 
 Day 1
-  ~ [Introduction to derivatives](notes/derivatives_intro.md)
+  ~ [Intermediate Value Theorem](notes/ivt.md)
 
 Day 2
+  ~ [Introduction to derivatives](notes/derivatives_intro.md)
+
+Day 3
   ~ [Derivative as a function](notes/derivatives_function.md)
 
     Homework 4 Due: 2.7 8, 20, 2.8 2, 6
-
-Day 3
-  ~ [Derivative rules](notes/derivatives_rules.md)
-
-    Homework 5 Due: 3.1 4, 26, 34, 38
 
 ## Week  5 (10/02-10/06)
 
 Day 1
   ~ Review
+
+    Homework 5 Due: 3.1 4, 26, 34, 38
 
 Day 2
   ~ **MIDTERM 1** ([study guide](notes/midterm1_study_guide.md))
