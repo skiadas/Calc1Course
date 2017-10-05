@@ -67,38 +67,40 @@ Day 2
   ~ **MIDTERM 1** ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
-  ~ [Derivative rules](notes/derivatives_rules.md)
+  ~ [Derivative as a function](notes/derivatives_function.md)
 
-    [Higher derivatives](notes/derivatives_higher.md)
+    [Derivative rules](notes/derivatives_rules.md)
 
 ## Week  6 (10/09-10/13)
 
 Day 1
+  ~ [Derivative rules (cont)](notes/derivatives_rules.md)
+
+    [Higher derivatives](notes/derivatives_higher.md)
+
+Day 2
   ~ [Derivatives for trigonometric functions](notes/derivatives_trig.md)
 
     Homework 6 Due: 3.2 16, 20, 26, 36, 66
 
-Day 2
-  ~ [Chain rule](notes/chain_rule.md)
-
-    [Implicit differentiation](notes/implicit_differentiation.md)
-
 Day 3
-  ~ [Related rates](notes/related_rates.md)
+  ~ [Chain rule](notes/chain_rule.md)
 
     Homework 7 Due: 3.3 4, 18, 32, 3.5 12, 14
 
 ## Week  7 (10/16-10/20)
 
 Day 1
-  ~ [Linear Approximation and applications](notes/linear_approx.md)
+  ~ [Implicit differentiation](notes/implicit_differentiation.md)
 
-    [Extreme values](notes/extreme_values.md)
+    [Related rates](notes/related_rates.md)
 
     Homework 8 Due: 3.6 18, 28, 42, 3.7 12, 70
 
 Day 2
-  ~ [Extreme values](notes/extreme_values.md)
+  ~ [Linear Approximation and applications](notes/linear_approx.md)
+
+    [Extreme values](notes/extreme_values.md)
 
     Homework 9 Due: 3.8 6, 10, 38, 3.9 14, 16
 
