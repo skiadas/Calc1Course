@@ -69,43 +69,41 @@ Day 2
 Day 3
   ~ [Derivative as a function](notes/derivatives_function.md)
 
-    [Derivative rules](notes/derivatives_rules.md)
-
 ## Week  6 (10/09-10/13)
 
 Day 1
+  ~ [Derivative rules](notes/derivatives_rules.md)
+
+Day 2
   ~ [Derivative rules (cont)](notes/derivatives_rules.md)
 
     [Higher derivatives](notes/derivatives_higher.md)
 
-Day 2
+Day 3
   ~ [Derivatives for trigonometric functions](notes/derivatives_trig.md)
 
     Homework 6 Due: 3.2 16, 20, 26, 36, 66
 
-Day 3
+## Week  7 (10/16-10/20)
+
+Day 1
   ~ [Chain rule](notes/chain_rule.md)
 
     Homework 7 Due: 3.3 4, 18, 32, 3.5 12, 14
 
-## Week  7 (10/16-10/20)
-
-Day 1
+Day 2
   ~ [Implicit differentiation](notes/implicit_differentiation.md)
 
     [Related rates](notes/related_rates.md)
 
     Homework 8 Due: 3.6 18, 28, 42, 3.7 12, 70
 
-Day 2
+Day 3
   ~ [Linear Approximation and applications](notes/linear_approx.md)
 
     [Extreme values](notes/extreme_values.md)
 
     Homework 9 Due: 3.8 6, 10, 38, 3.9 14, 16
-
-Day 3
-  ~ [Mean value theorem, monotonicity](notes/mean_value_theorem.md)
 
 ## Week  8 (10/23-10/27)
 
@@ -113,7 +111,7 @@ Day 1
   ~ BREAK
 
 Day 2
-  ~ [Mean value theorem, monotonicity (cont)](notes/mean_value_theorem.md)
+  ~ [Mean value theorem, monotonicity](notes/mean_value_theorem.md)
 
     Homework 10 Due: 4.1 14, 46, 52, 4.2 18, 30
 
