@@ -19,14 +19,14 @@ Watch out for the minus sign!
 
 Proof:
 
-- Definition of derivative: $\frac{d}{dx}\sin x = \lim_{h\to 0}\frac{\sin(x+h) - \sin(x)}{h}$
+- Definition of derivative: $\displaystyle\frac{d}{dx}\sin x = \lim_{h\to 0}\frac{\sin(x+h) - \sin(x)}{h}$
 - Use trig identity: $\sin(x+h) = \sin x \cos h + \cos x \sin h$
 - Algebra
 
 Second derivatives:
 
-> $$\frac{d^x}{dx^2} \sin x = - \sin x, \qquad \frac{d^2}{dx^2} \cos x = - \cos x$$
-> Both $\sin$ and $\cos$ satisfy the differential equation $f''(x) = f(x)$.
+> $$\frac{d^2}{dx^2} \sin x = - \sin x, \qquad \frac{d^2}{dx^2} \cos x = - \cos x$$
+> Both $\sin$ and $\cos$ satisfy the differential equation $f''(x) = -f(x)$.
 
 Practice problems: Derivatives of $\sin x  + \cos x$, $x\sin(2x)$, $\frac{x}{\cos x}$
 

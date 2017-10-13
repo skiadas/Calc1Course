@@ -77,10 +77,10 @@ Day 1
 Day 2
   ~ [Derivative rules (cont)](notes/derivatives_rules.md)
 
-    [Higher derivatives](notes/derivatives_higher.md)
-
 Day 3
-  ~ [Derivatives for trigonometric functions](notes/derivatives_trig.md)
+  ~ [Higher derivatives](notes/derivatives_higher.md)
+
+    [Derivatives for trigonometric functions](notes/derivatives_trig.md)
 
     Homework 6 Due: 3.2 16, 20, 26, 36, 66
 
