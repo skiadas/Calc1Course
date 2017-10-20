@@ -111,27 +111,27 @@ Day 1
 Day 2
   ~ [Mean value theorem, monotonicity](notes/mean_value_theorem.md)
 
-    Homework 9 Due: 3.8 6, 10, 38, 3.9 14, 16
-
 Day 3
   ~ [Graph sketching](notes/graph_sketching.md)
 
-    Homework 10 Due: 4.1 14, 46, 52, 4.2 18, 30
+    Homework 9 Due: 3.8 6, 10, 38, 3.9 14, 16
 
 ## Week  9 (10/30-11/03)
 
 Day 1
   ~ [Graph sketching](notes/graph_sketching.md)
 
-    Homework 11 Due: 4.3 20, 26, 38, 46
+    Homework 10 Due: 4.1 14, 46, 52, 4.2 18, 30
 
 Day 2
   ~ [Applied optimization](notes/applied_optimization.md)
 
-    Homework 12 Due: 4.4 6, 24, 4.5 16, 32
+    Homework 11 Due: 4.3 20, 26, 38, 46
 
 Day 3
   ~ [Applied optimization (cont)](notes/applied_optimization.md)
+
+    Homework 12 Due: 4.4 6, 24, 4.5 16, 32
 
 ## Week 10 (11/06-11/10)
 
