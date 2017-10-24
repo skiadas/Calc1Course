@@ -94,14 +94,10 @@ Day 1
 Day 2
   ~ [Implicit differentiation](notes/implicit_differentiation.md)
 
-    [Related rates](notes/related_rates.md)
-
     Homework 8 Due: 3.6 18, 28, 42, 3.7 12, 70
 
 Day 3
-  ~ [Linear Approximation and applications](notes/linear_approx.md)
-
-    [Extreme values](notes/extreme_values.md)
+  ~ [Related rates](notes/related_rates.md)
 
 ## Week  8 (10/23-10/27)
 
@@ -109,10 +105,12 @@ Day 1
   ~ BREAK
 
 Day 2
-  ~ [Mean value theorem, monotonicity](notes/mean_value_theorem.md)
+  ~ [Linear Approximation and applications](notes/linear_approx.md)
+
+    [Extreme values](notes/extreme_values.md)
 
 Day 3
-  ~ [Graph sketching](notes/graph_sketching.md)
+  ~ [Mean value theorem, monotonicity](notes/mean_value_theorem.md)
 
     Homework 9 Due: 3.8 6, 10, 38, 3.9 14, 16
 
