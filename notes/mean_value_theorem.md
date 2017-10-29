@@ -23,7 +23,7 @@ The mean value theorem relates the values of a function at two points to the val
 
 Rate-of-change interpretation: The average rate of change over an interval must equal the instantaneous rate of change somewhere along the interval.
 
-A very important corollary of this theorem is the following:
+A very important corollary of this theorem is the following intuitively clear result:
 
 > If $f(x)$ is differentiable and $f'(x) = 0$ for all $x\in(a, b)$, then $f(x)$ must be a constant function on $(a, b)$.
 
