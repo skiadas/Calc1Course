@@ -110,18 +110,17 @@ Day 2
 Day 3
   ~ [Extreme values](notes/extreme_values.md)
 
-    Homework 9 Due: 3.8 6, 10, 38, 3.9 14, 16
-
 ## Week  9 (10/30-11/03)
 
 Day 1
   ~ [Mean value theorem, monotonicity](notes/mean_value_theorem.md)
 
-    Homework 10 Due: 4.1 14, 46, 52, 4.2 18, 30
+    Homework 9 Due: 3.8 6, 10, 38, 3.9 14, 16
 
 Day 2
   ~ [Graph sketching](notes/graph_sketching.md)
 
+    Homework 10 Due: 4.1 14, 46, 52, 4.2 18, 30
 
 Day 3
   ~ [Applied optimization](notes/applied_optimization.md)
