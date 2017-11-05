@@ -10,7 +10,7 @@
 8. Definition of absolute maxima/minima, and local maxima/minima.
 9. Extreme Value Theorem (Theorem 1 on 4.2)
 10. Critical points. Fermat's theorem (Theorem 2 on 4.2)
-11. Fiding the maximum and minimum value of a continuous function on a closed interval. (Theorem 3 on 4.2)
+11. Finding the maximum and minimum value of a continuous function on a closed interval. (Theorem 3 on 4.2)
 12. Rolle's Theorem (Theorem 4 on 4.2)
 13. Mean Value Theorem, statement and use
 14. A function with derivative 0 is constant (Corollary on top of page 195)
