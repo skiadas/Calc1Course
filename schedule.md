@@ -130,7 +130,7 @@ Day 3
 ## Week 10 (11/06-11/10)
 
 Day 1
-  ~ [Newton's method](notes/newton.md)
+  ~ [Graph sketching (cont)](notes/graph_sketching.md)
 
     Homework 11 Due: 4.3 20, 26, 38, 46
 
@@ -145,22 +145,24 @@ Day 3
 ## Week 11 (11/13-11/17)
 
 Day 1
-  ~ [Antiderivatives](notes/antiderivatives.md)
+  ~ [Newton's method](notes/newton.md)
 
-    Homework 13 Due: 4.6 2, 4, 8, 20, 52
+    [Antiderivatives](notes/antiderivatives.md)
 
 Day 2
   ~ [Introduction to computing areas](notes/computing_areas.md)
 
+    Homework 13 Due: 4.6 2, 4, 8, 20, 52
+
 Day 3
   ~ [The definite integral](notes/definite_integral.md)
-
-    Homework 14 Due: 4.7 2, 16 4.8 14, 22, 50
 
 ## Week 12 (11/20-11/24)
 
 Day 1
   ~ [The definite integral (cont)](notes/definite_integral.md)
+
+    Homework 14 Due: 4.7 2, 16 4.8 14, 22, 50
 
 Day 2
   ~ THANKSGIVING
