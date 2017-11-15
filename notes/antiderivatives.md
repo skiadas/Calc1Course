@@ -1,4 +1,4 @@
-# Newton's method
+# Antiderivatives
 
 ## Reading
 
