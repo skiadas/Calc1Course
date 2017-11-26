@@ -178,24 +178,26 @@ Day 1
 Day 2
   ~ [Fundamental Theorem of Calculus, part 2](notes/fundamental_theorem_calculus.md)
 
-    Homework 15 Due: 5.2 4, 14, 18, 40
+    Homework 15 Due: 5.1 8, 16, 18, 28
 
 Day 3
   ~ [The substitution method](notes/substitution.md)
 
-    Homework 16 Due: 5.3 10, 20, 38, 46
+    Homework 16 Due: 5.2 4, 14, 18, 40
 
 ## Week 14 (12/04-12/08)
 
 Day 1
   ~ Area between curves
 
-    Homework 17 Due: 5.4 24, 28, 34, 36
+    Homework 17 Due: 5.3 10, 20, 38, 46
 
 Day 2
   ~ Review/Catchup
 
+    Homework 18 Due: 5.4 24, 28, 34, 36
+
 Day 3
   ~ Review ([final study guide](notes/midterm3_study_guide.md))
 
-    Homework 18 due: 5.6 14, 16, 38, 60, 72
+    Homework 19 due: 5.6 14, 16, 38, 60, 72
